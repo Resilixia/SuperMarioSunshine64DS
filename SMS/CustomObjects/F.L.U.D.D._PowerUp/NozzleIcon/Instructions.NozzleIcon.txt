@@ -1,0 +1,102 @@
+Note: You will require a hex editor which allows the block selection, copying and overwriting of data. I have used XVI32.
+
+The image "HoseNozzle.bmp" is the F.L.U.D.D. icon that we want to display on the screen when F.L.U.D.D. is in use. It is 
+a 32x16 indexed Bitmap image with exactly 16 colours in its palette. 
+
+To insert it we are going to add it to an unused region of the following existing HUD image which will be loaded at all 
+times during normal "Adventure" mode: 
+NCG (tile data): 
+Filename: /ARCHIVE/cee.narc/data/2D_cad/EUR/ENG/d_2d_upr_icon_E_ncg.bin
+Size: 256x64
+Bits per pixel: 4
+Compression: LZ77 without header
+
+NCL (palette):
+Filename: /ARCHIVE/c2d.narc/data/2D_cad/EUR/d_2d_upr_icon_P_ncl.bin
+Compression: None
+
+The NCG format splits the image into a grid of 8x8 pixel tiles, left-to-right, top-to-bottom. This means that our nozzle 
+image occupies 4x2 tiles. We're going to replace tiles 12-15 and 44-47 with rows 0-3 and 4-7 respectively of our converted 
+nozzle image.
+
+Each tile contains for each pixel its colour, stored as in index into the colour palette. NCG 
+images which use 8 bits per pixel may have a palette of up to 256 colours whereas those which use 4 bits are limited to 
+just 16 at a time. Rather than have each 4 bpp image have only a single 16 colour palette, the palette may have up to 
+16 "rows" each containing 16 colours and different parts of the image will be displayed with different palette rows.
+
+The image "d_2d_upr_icon_E_ncg.bin" has 7 palette rows. We could add an additional row but to save space we'll overwrite 
+the unused 5th row. 
+
+To import the nozzle: 
+1. Extract the decompressed NCG and its NCL palette
+-- Open your SM64DS ROM in SM64DSe
+-- Select the tab "SM64DS File System" and navigate to "/ARCHIVE/cee.narc/data/2D_cad/EUR/ENG/d_2d_upr_icon_E_ncg.bin"
+-- Click on "LZ Force Decompression" followed by "Extract (Raw)", saving the file as "d_2d_upr_icon_E_ncg.decompressed.bin"
+-- Navigate to and extract "/ARCHIVE/c2d.narc/data/2D_cad/EUR/d_2d_upr_icon_P_ncl.bin", saving the file as "d_2d_upr_icon_P_ncl.bin"
+
+2. Convert HoseNozzle.bmp
+-- Select the "Levels" tab with SM64DSe, select any level and click on "Edit level"
+-- Click the "Minimap" button to open the Minimap and Image Editor
+-- Under "Graphic NCG" enter the filename "data/2D_cad/EUR/ENG/d_2d_upr_icon_E_ncg.bin" and uncheck "Decompress"
+-- Under "Palette NCL" enter the filename "data/2D_cad/EUR/d_2d_upr_icon_P_ncl.bin"
+-- Under "Screen NSC" ensure that no filename is entered and uncheck "Decompress"
+-- Enter a "Width" of "32" and a "Height" of "16"
+-- Under "Bits Per Pixel" select "4"
+-- Leave "Palette Row (4 bpp Only) at "0"
+-- Uncheck "Is Minimap"
+-- Click on "Import" and select the image "HoseNozzle.bmp"
+-- Ignore any settings in the "Import Image 4BPP" window which opens upon selection and click "Import"
+-- Close the "Import Image 4BPP" window
+-- You should see the "HoseNozzle" image displayed correctly within the minimap/image editor
+
+3. Export the generated NCG and NCL files
+-- Within the main SM64DSe window select the "SM64DS File System" 
+-- Navigate to and extract "/ARCHIVE/cee.narc/data/2D_cad/EUR/ENG/d_2d_upr_icon_E_ncg.bin", saving the file as "hose_nozzle_ncg.decompressed.bin"
+-- Navigate to and extract "/ARCHIVE/c2d.narc/data/2D_cad/EUR/d_2d_upr_icon_P_ncl.bin", saving the file as "hose_nozzle_ncl.bin"
+
+4. Merge the NCG files
+-- Make a copy of the exported "d_2d_upr_icon_E_ncg.decompressed.bin" and name it "d_2d_upr_icon_E_ncg.hose_nozzle.decompressed.bin"
+-- We want to replace tiles 12-15 and 44-47 (inclusive) of "d_2d_upr_icon_E_ncg.hose_nozzle.decompressed.bin" with tiles 0-3 and 4-7 (inclusive) 
+of "hose_nozzle_ncg.decompressed.bin". We first need to calculate the offsets of these tiles: each tile contains 64 pixels and each pixel 
+occupies 4bits so to calculate a tile's offset use ((index * 64) / 2) where index is the zero-based tile index. We can then calculate that we 
+need to overwrite bytes 384-511 and 1408-1535 of the original images with bytes 0-127 and 128-255 (inclusive) from the nozzle icon respectively.
+-- Open "hose_nozzle_ncg.decompressed.bin" in XVI32
+-- Select the data by clicking on 0x00, hitting Ctrl+B then doing the same for 0x7F. Navigate to and select "Edit > Clipboard > Copy as hex string".
+-- Open "d_2d_upr_icon_E_ncg.hose_nozzle.decompressed.bin" in XVI32
+-- Navigate to and select "Edit > Overwrite string..."
+-- Select "hex String", paste the string copied to the clipboard and hit "OK"
+-- In a similar manner copy bytes 128-511 from "hose_nozzle_ncg.decompressed.bin" and overwrite bytes 1408-1535 of 
+"d_2d_upr_icon_E_ncg.hose_nozzle.decompressed.bin"
+-- Save your changes to "d_2d_upr_icon_E_ncg.hose_nozzle.decompressed.bin"
+
+5. Merge the NCL files
+-- Make a copy of the exported "d_2d_upr_icon_P_ncl.bin" and name it "d_2d_upr_icon_P_ncl.hose_nozzle.bin"
+-- We want to replace the 5th row, row index 4 of "d_2d_upr_icon_P_ncl.bin" with the palette from our nozzle icon. Each palette row 
+contains 16 colours and each colour is stored using 16 bits (2 bytes). The offset of the 5th row is therefore (4 * (16 * 2)) 128. 
+The nozzle icon has exactly 16 colours which means 1 row. We therefore want to replace bytes 128-159 of "d_2d_upr_icon_P_ncl.bin" with 
+bytes 0-32 (inclusive) of "hose_nozzle_ncl.bin".
+-- Similarly to as was done in step 4, overwrite bytes 128-159 of "d_2d_upr_icon_P_ncl.hose_nozzle.bin" with bytes 0-32 of 
+"hose_nozzle_ncl.bin"
+-- Save your changes to "d_2d_upr_icon_P_ncl.hose_nozzle.bin"
+
+6. Import the merged image
+-- Within SM64DSe, select the "SM64DS File System" tab within the main window
+-- Navigate to "/ARCHIVE/cee.narc/data/2D_cad/EUR/ENG/d_2d_upr_icon_E_ncg.bin" and replace it with "d_2d_upr_icon_E_ncg.hose_nozzle.decompressed.bin"
+-- SM64DS expects "d_2d_upr_icon_E_ncg.bin" to be compressed using LZ77 without a header so click on "LZ Force Compression"
+-- Export "d_2d_upr_icon_E_ncg.bin", saving the file as "d_2d_upr_icon_E_ncg.hose_nozzle.compressed.bin" so you can re-import without having to 
+worry about compression
+-- Navigate to "/ARCHIVE/c2d.narc/data/2D_cad/EUR/d_2d_upr_icon_P_ncl.bin" and replace it with "d_2d_upr_icon_P_ncl.hose_nozzle.bin"
+
+7. Verify
+-- Open the minimap/image editor 
+-- Under "Graphic NCG" enter the filename "data/2D_cad/EUR/ENG/d_2d_upr_icon_E_ncg.bin" and check "Decompress"
+-- Under "Palette NCL" enter the filename "data/2D_cad/EUR/d_2d_upr_icon_P_ncl.bin"
+-- Under "Screen NSC" ensure that no filename is entered and uncheck "Decompress"
+-- Enter a "Width" of "256" and a "Height" of "64"
+-- Under "Bits Per Pixel" select "4"
+-- Set "Palette Row (4 bpp Only) to "4"
+-- Uncheck "Is Minimap"
+-- Click on "Load Image"
+-- You should the nozzle icon correctly displayed near the middle of the first row
+
+Done.

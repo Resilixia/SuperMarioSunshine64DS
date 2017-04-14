@@ -1,0 +1,57 @@
+Note: I used Blender v2.70a to export the models
+
+- Open FLUDDAndLuigi.blend in Blender and export to DAE, ensuring that the "Include Material Textures" option is selected
+
+You will need to make some manual changes before the exported DAE model can be imported: 
+- Replace the entire <library_visual_scenes>.<visual_scene id="Scene" ...>.<node id="Armature" ...> node in your exported model with 
+the <library_visual_scenes>.<visual_scene id="Scene" ...>.<node id="luigi_all_root" ...> node found in FLUDDSkeletonLuigi.DAE. This 
+replaces the node matrix transformations with the individual scale, rotation and translation components as required by SM64DSe.
+- Replace the absolute texture filenames within <library_images>.<image>.<init_from> tags with their relative locations
+- Add the following <extra> to <library_effects>.<effect id="mat_body-effect">.<profile_COMMON>: 
+<extra>
+	<technique profile="SM64DSe">
+		<lights>1 0 0 0</lights>
+		<environment_mapping>0</environment_mapping>
+		<double_sided>0</double_sided>
+		<tex_tiling>flip flip</tex_tiling>
+		<tex_scale>1 1</tex_scale>
+		<tex_rotate>0</tex_rotate>
+		<tex_translate>0 0</tex_translate>
+		<fog_enable>0</fog_enable>
+	</technique>
+</extra>
+This will apply the same material settings as in the original BMD model (see "ExportedOriginalModels/luigi_model.dae" for reference).
+- Add the following <extra> to <library_effects>.<effect id="Water-effect">.<profile_COMMON>: 
+<extra>
+	<technique profile="SM64DSe">
+		<double_sided>1</double_sided>
+	</technique>
+</extra>
+This will make the water material double-sided once imported into SM64DS.
+
+Your model should now be ready to import. I have included "FLUDDAndLuigi_Ready.dae" as a reference for how the final DAE model should look.
+- Open your ROM in SM64DSe
+- Select any level and click on "Edit level"
+- Select "3D model" along the top followed by "Import other model" on the left-hand side
+- Select the model "/ARCHIVE/arc0.narc/data/player/luigi_model.bmd"
+- Un-check "Generate collision map", set "Texture Quality Setting" to "Best Quality" and check "Vertically Flip All Textures"
+- Click on "Open" along the top and select your exported DAE model
+- Set the "In-Game Size Preview" to "0.008" and confirm that your model looks as expected
+- Click "Import"
+
+Next we need to fix Luigi's Power Flower texture animation to remove the reference to his translucent texture which 
+no longer exists. This will prevent the game from crashing upon picking up a Power Flower (Luigi's texture will remain the same).
+- Click on "Texture and BTP Editor" in the top right-hand corner
+- Click on "Load BTP" and select "/ARCHIVE/arc0.narc/data/player/L_tx_bodytrans.btp"
+- Remove all frames, materials, textures and palettes using their respective "-" button
+- Click on "Save BTP"
+You should end up with L_tx_bodytrans.btp being the same as the included "L_tx_bodytrans_Empty.btp".
+
+Finally we need to replace Luigi's waiting animation with Mario's so that F.L.U.D.D. is not intersecting with Luigi's head: 
+- Within the main SM64DSe window click on the "SM64DS File System" tab
+- Navigate to "/ARCHIVE/arc0.narc/data/player/wait.bca"
+- Click on "Extract (Raw)" and save the exported file on to your file system
+- Navigate to "/ARCHIVE/arc0.narc/data/player/L_wait.bca"
+- Click on "Replace (Raw)" and select the exported "wait.bca" file
+
+Done.

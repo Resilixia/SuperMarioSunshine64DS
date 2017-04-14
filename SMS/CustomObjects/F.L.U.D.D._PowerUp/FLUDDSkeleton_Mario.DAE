@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.2 PRIVATE BETA 20150105-->
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Fiachra</author>
+			<authoring_tool>SM64DS Editor v2.2 PRIVATE BETA 20150105</authoring_tool>
+		</contributor>
+		<created>2015-01-07T16:30:58</created>
+		<modified>2015-01-07T16:30:58</modified>
+		<unit name="meter" meter="1" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<!--This lists each of the 'bones' in the BMD model, listing each bone's individual Scale, Rotation, Translation transformation in the reverse of the order in which they should be multiplied to form an SRT  matrix. This will then be multiplied recursively by the parents' transformations to get the final transformation for this joint.-->
+			<node id="mario_all_root" name="mario_all_root" sid="mario_all_root" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+				<node id="skl_root" name="skl_root" sid="skl_root" type="JOINT">
+					<translate sid="translate">0 6.144287 -0.473877</translate>
+					<rotate sid="rotationZ">0 0 1 90</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 90</rotate>
+					<scale sid="scale">1 1 1</scale>
+					<node id="leg_l1" name="leg_l1" sid="leg_l1" type="JOINT">
+						<translate sid="translate">0.1032715 0.3071289 1.443848</translate>
+						<rotate sid="rotationZ">0 0 1 180</rotate>
+						<rotate sid="rotationY">0 1 0 0</rotate>
+						<rotate sid="rotationX">1 0 0 -180</rotate>
+						<scale sid="scale">1 1 1</scale>
+						<node id="leg_l2" name="leg_l2" sid="leg_l2" type="JOINT">
+							<translate sid="translate">2.871582 0 0</translate>
+							<rotate sid="rotationZ">0 0 1 0</rotate>
+							<rotate sid="rotationY">0 1 0 0</rotate>
+							<rotate sid="rotationX">1 0 0 180</rotate>
+							<scale sid="scale">1 1 1</scale>
+							<node id="ankle_l1" name="ankle_l1" sid="ankle_l1" type="JOINT">
+								<translate sid="translate">2.008301 0 0</translate>
+								<rotate sid="rotationZ">0 0 1 -90</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 0</rotate>
+								<scale sid="scale">1 1 1</scale>
+							</node>
+						</node>
+					</node>
+					<node id="leg_r1" name="leg_r1" sid="leg_r1" type="JOINT">
+						<translate sid="translate">0.1032715 0.3071289 -1.443848</translate>
+						<rotate sid="rotationZ">0 0 1 180</rotate>
+						<rotate sid="rotationY">0 1 0 0</rotate>
+						<rotate sid="rotationX">1 0 0 -180</rotate>
+						<scale sid="scale">1 1 1</scale>
+						<node id="leg_r2" name="leg_r2" sid="leg_r2" type="JOINT">
+							<translate sid="translate">2.871582 0 0</translate>
+							<rotate sid="rotationZ">0 0 1 0</rotate>
+							<rotate sid="rotationY">0 1 0 0</rotate>
+							<rotate sid="rotationX">1 0 0 180</rotate>
+							<scale sid="scale">1 1 1</scale>
+							<node id="ankle_r1" name="ankle_r1" sid="ankle_r1" type="JOINT">
+								<translate sid="translate">2.008301 0 0</translate>
+								<rotate sid="rotationZ">0 0 1 -90</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 0</rotate>
+								<scale sid="scale">1 1 1</scale>
+							</node>
+						</node>
+					</node>
+					<node id="spin" name="spin" sid="spin" type="JOINT">
+						<translate sid="translate">0.9724121 0 0</translate>
+						<rotate sid="rotationZ">0 0 1 0</rotate>
+						<rotate sid="rotationY">0 1 0 0</rotate>
+						<rotate sid="rotationX">1 0 0 0</rotate>
+						<scale sid="scale">1 1 1</scale>
+						<node id="arm_l1" name="arm_l1" sid="arm_l1" type="JOINT">
+							<translate sid="translate">2.949951 -0.03271484 2.262451</translate>
+							<rotate sid="rotationZ">0 0 1 -126.5625</rotate>
+							<rotate sid="rotationY">0 1 0 -90</rotate>
+							<rotate sid="rotationX">1 0 0 -53.4375</rotate>
+							<scale sid="scale">1 1 1</scale>
+							<node id="arm_l2" name="arm_l2" sid="arm_l2" type="JOINT">
+								<translate sid="translate">1.95874 0 0</translate>
+								<rotate sid="rotationZ">0 0 1 0</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 -180</rotate>
+								<scale sid="scale">1 1 1</scale>
+								<node id="wrist_l1" name="wrist_l1" sid="wrist_l1" type="JOINT">
+									<translate sid="translate">1.875 0 0</translate>
+									<rotate sid="rotationZ">0 0 1 0</rotate>
+									<rotate sid="rotationY">0 1 0 0</rotate>
+									<rotate sid="rotationX">1 0 0 0</rotate>
+									<scale sid="scale">1 1 1</scale>
+								</node>
+							</node>
+						</node>
+						<node id="arm_r1" name="arm_r1" sid="arm_r1" type="JOINT">
+							<translate sid="translate">2.949951 -0.03271484 -2.262451</translate>
+							<rotate sid="rotationZ">0 0 1 -110.2149</rotate>
+							<rotate sid="rotationY">0 1 0 90</rotate>
+							<rotate sid="rotationX">1 0 0 69.78516</rotate>
+							<scale sid="scale">1 1 1</scale>
+							<node id="arm_r2" name="arm_r2" sid="arm_r2" type="JOINT">
+								<translate sid="translate">1.95874 0 0</translate>
+								<rotate sid="rotationZ">0 0 1 0</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 180</rotate>
+								<scale sid="scale">1 1 1</scale>
+								<node id="wrist_r1" name="wrist_r1" sid="wrist_r1" type="JOINT">
+									<translate sid="translate">1.875 0 0</translate>
+									<rotate sid="rotationZ">0 0 1 0</rotate>
+									<rotate sid="rotationY">0 1 0 0</rotate>
+									<rotate sid="rotationX">1 0 0 0</rotate>
+									<scale sid="scale">1 1 1</scale>
+								</node>
+							</node>
+						</node>
+						<node id="face_1" name="face_1" sid="face_1" type="JOINT">
+							<translate sid="translate">4.276611 0 0</translate>
+							<rotate sid="rotationZ">0 0 1 90</rotate>
+							<rotate sid="rotationY">0 1 0 0</rotate>
+							<rotate sid="rotationX">1 0 0 0</rotate>
+							<scale sid="scale">1 1 1</scale>
+						</node>
+						<node id="fludd" name="fludd" sid="fludd" type="JOINT">
+							<translate sid="translate">0 -4.4 0</translate>
+							<rotate sid="rotationZ">0 0 1 0</rotate>
+							<rotate sid="rotationY">0 1 0 0</rotate>
+							<rotate sid="rotationX">1 0 0 0</rotate>
+							<scale sid="scale">1 1 1</scale>
+							<node id="handle_l1" name="handle_l1" sid="handle_l1" type="JOINT">
+								<translate sid="translate">5 -0.055 4.125</translate>
+								<rotate sid="rotationZ">0 0 1 0</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 0</rotate>
+								<scale sid="scale">1 1 1</scale>
+							</node>
+							<node id="handle_r1" name="handle_r1" sid="handle_r1" type="JOINT">
+								<translate sid="translate">5 -0.055 -4.125</translate>
+								<rotate sid="rotationZ">0 0 1 0</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 0</rotate>
+								<scale sid="scale">1 1 1</scale>
+							</node>
+							<node id="nozzle_hover" name="nozzle_hover" sid="nozzle_hover" type="JOINT">
+								<translate sid="translate">9.9 0 0</translate>
+								<rotate sid="rotationZ">0 0 1 0</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 0</rotate>
+								<scale sid="scale">1 1 1</scale>
+									<node id="water_nozzle_l1" name="water_nozzle_l1" sid="water_nozzle_l1" type="JOINT">
+									<translate sid="translate">0.07 -0.682 4.73</translate>
+									<rotate sid="rotationZ">0 0 1 0</rotate>
+									<rotate sid="rotationY">0 1 0 0</rotate>
+									<rotate sid="rotationX">1 0 0 0</rotate>
+									<scale sid="scale">1 1 1</scale>
+									<node id="waterboost_l1" name="waterboost_l1" sid="waterboost_l1" type="JOINT">
+										<translate sid="translate">0 0 0</translate>
+										<rotate sid="rotationZ">0 0 1 0</rotate>
+										<rotate sid="rotationY">0 1 0 0</rotate>
+										<rotate sid="rotationX">1 0 0 0</rotate>
+										<scale sid="scale">1 1 1</scale>
+									</node>
+								</node>
+								<node id="water_nozzle_r1" name="water_nozzle_r1" sid="water_nozzle_r1" type="JOINT">
+									<translate sid="translate">0.07 -0.682 -4.73</translate>
+									<rotate sid="rotationZ">0 0 1 0</rotate>
+									<rotate sid="rotationY">0 1 0 0</rotate>
+									<rotate sid="rotationX">1 0 0 0</rotate>
+									<scale sid="scale">1 1 1</scale>
+									<node id="waterboost_r1" name="waterboost_r1" sid="waterboost_r1" type="JOINT">
+										<translate sid="translate">0 0 0</translate>
+										<rotate sid="rotationZ">0 0 1 0</rotate>
+										<rotate sid="rotationY">0 1 0 0</rotate>
+										<rotate sid="rotationX">1 0 0 0</rotate>
+										<scale sid="scale">1 1 1</scale>
+									</node>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene" />
+	</scene>
+</COLLADA>
