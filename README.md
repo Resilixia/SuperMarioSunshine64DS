@@ -19,3 +19,6 @@ This is an incomplete port of many Super Mario Sunshine elements into Super Mari
 6. Make a copy of your updated ROM.
 7. Open the copy your updated ROM in NSMBe and select the "Tools/Options" tab.
 8. Under the "ASM Tools" header click on "Run 'make clean'" followed by "Run 'make' and insert". Once finished you may close NSMBe.
+
+## Licensing
+You are free to make use of this code and its assets in a ROM hack of your own as long as you give credit for anything used.
