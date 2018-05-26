@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Blender User</author>
+			<authoring_tool>Blender 2.70.0 commit date:2014-04-10, commit time:11:49, hash:f93bc76</authoring_tool>
+		</contributor>
+		<created>2015-03-12T19:35:13</created>
+		<modified>2015-03-12T19:35:13</modified>
+		<unit name="meter" meter="1"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="race_flag_pianta_png" name="race_flag_pianta_png">
+			<init_from>race_flag_pianta_VFlip.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="mat_obj_race_flag-effect">
+			<profile_COMMON>
+				<newparam sid="race_flag_pianta_png-surface">
+					<surface type="2D">
+						<init_from>race_flag_pianta_png</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="race_flag_pianta_png-sampler">
+					<sampler2D>
+						<source>race_flag_pianta_png-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="race_flag_pianta_png-sampler" texcoord="skl_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="mat_obj_race_flag-material" name="mat_obj_race_flag">
+			<instance_effect url="#mat_obj_race_flag-effect"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="skl_root-mesh-mesh" name="skl_root-mesh">
+			<mesh>
+				<source id="skl_root-mesh-mesh-positions">
+					<float_array id="skl_root-mesh-mesh-positions-array" count="48">0.001708984 47.26563 -13.55078 0.001708984 81.06641 -13.55078 0 52.34375 -27.22095 0 74.8125 -27.22095 0 68.75391 -40.8938 0 57.42188 -40.8938 0 62.5 -54.56421 -1.609375 88.12501 -2.5 -1.609375 -8.75 -2.5 1.609375 -8.75 -2.5 1.609375 88.12501 -2.5 0 88.12501 1.25 0 -8.75 1.25 0 62.98047 -0.9804688 0 42.1875 0.1210938 0 85.9375 -2.117188</float_array>
+					<technique_common>
+						<accessor source="#skl_root-mesh-mesh-positions-array" count="16" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="skl_root-mesh-mesh-normals">
+					<float_array id="skl_root-mesh-mesh-normals-array" count="42">1 0 -1.25016e-4 1 0 -1.25016e-4 1 0 0 1 0 0 1 0 0 0 0 -1 1 0 1.35954e-4 0.9189468 0 0.3943814 -0.9189468 0 0.3943814 1 6.75513e-6 1.27509e-4 1 7.24814e-6 1.46382e-4 0 0 -1 0.9189468 0 0.3943814 -0.9189468 0 0.3943814</float_array>
+					<technique_common>
+						<accessor source="#skl_root-mesh-mesh-normals-array" count="14" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="skl_root-mesh-mesh-map-0">
+					<float_array id="skl_root-mesh-mesh-map-0-array" count="84">0.4897097 0.1788775 0.2345858 1.106692 0.234586 0.01483547 0.2345858 1.106692 0.4897097 0.1788775 0.4897096 0.9046562 0.7448776 0.7089534 0.4897096 0.9046562 0.4897097 0.1788775 0.4897097 0.1788775 0.7448776 0.3429098 0.7448776 0.7089534 1 0.5069417 0.7448776 0.7089534 0.7448776 0.3429098 0.03958588 0.004313528 0.03958588 0.004313528 0.03958588 0.1203293 0 0.5224614 0.234586 0.01483547 0.2345858 1.106692 0.03958588 0.1203293 0.03958588 0.004313528 0.03958588 0.004313528 0.03958588 0.1203293 0.03958588 0.1203293 0.03958588 0.004313528 0.9804688 0.01953125 0.9804688 0.01953125 0.9804688 0.01953125 0.9804688 0.01953125 0.9804688 0.01953125 0.9804688 0.01953125 0.03958588 0.1203293 0.03958588 0.004313528 0.03958588 0.1203293 0.03958588 0.1203293 0.03958588 0.1203293 0.03958588 0.004313528 0.03958588 0.004313528 0.03958588 0.1203293 0.03958588 0.004313528</float_array>
+					<technique_common>
+						<accessor source="#skl_root-mesh-mesh-map-0-array" count="42" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="skl_root-mesh-mesh-vertices">
+					<input semantic="POSITION" source="#skl_root-mesh-mesh-positions"/>
+				</vertices>
+				<polylist material="mat_obj_race_flag-material" count="14">
+					<input semantic="VERTEX" source="#skl_root-mesh-mesh-vertices" offset="0"/>
+					<input semantic="NORMAL" source="#skl_root-mesh-mesh-normals" offset="1"/>
+					<input semantic="TEXCOORD" source="#skl_root-mesh-mesh-map-0" offset="2" set="0"/>
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+					<p>2 0 0 1 0 1 0 0 2 1 1 3 2 1 4 3 1 5 4 2 6 3 2 7 2 2 8 2 3 9 5 3 10 4 3 11 6 4 12 4 4 13 5 4 14 7 5 15 10 5 16 9 5 17 13 6 18 0 6 19 1 6 20 9 7 21 10 7 22 11 7 23 8 8 24 12 8 25 11 8 26 0 9 27 13 9 28 14 9 29 1 10 30 15 10 31 13 10 32 8 11 33 7 11 34 9 11 35 12 12 36 9 12 37 11 12 38 7 13 39 8 13 40 11 13 41</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="Armature_skl_root-node-skin" name="Armature">
+			<skin source="#skl_root-mesh-mesh">
+				<bind_shape_matrix>1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</bind_shape_matrix>
+				<source id="Armature_skl_root-node-skin-joints">
+					<Name_array id="Armature_skl_root-node-skin-joints-array" count="5">skl_root flag_start flag01 flag02 flag03</Name_array>
+					<technique_common>
+						<accessor source="#Armature_skl_root-node-skin-joints-array" count="5" stride="1">
+							<param name="JOINT" type="name"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Armature_skl_root-node-skin-bind_poses">
+					<float_array id="Armature_skl_root-node-skin-bind_poses-array" count="80">0.999997 0 0.002472639 0 -0.002472639 -1.6292e-7 0.9999969 0 0 -1 -1.62921e-7 0 0 0 0 1 0.9998684 -0.01147061 -0.01147139 0.871484 0.01147139 0.9999342 0 0.00177592 0.01147061 -1.31706e-4 0.9999342 -62.49411 0 0 0 1 1 0 0 0 0 1 0 -13.47094 0 0 1 -62.5 0 0 0 1 1 0 0 0 0 1 0 -27.23754 0 0 1 -62.5 0 0 0 1 1 0 0 0 0 0 1 -62.5 0 -1 0 41.08763 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#Armature_skl_root-node-skin-bind_poses-array" count="5" stride="16">
+							<param name="TRANSFORM" type="float4x4"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Armature_skl_root-node-skin-weights">
+					<float_array id="Armature_skl_root-node-skin-weights-array" count="16">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#Armature_skl_root-node-skin-weights-array" count="16" stride="1">
+							<param name="WEIGHT" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#Armature_skl_root-node-skin-joints"/>
+					<input semantic="INV_BIND_MATRIX" source="#Armature_skl_root-node-skin-bind_poses"/>
+				</joints>
+				<vertex_weights count="16">
+					<input semantic="JOINT" source="#Armature_skl_root-node-skin-joints" offset="0"/>
+					<input semantic="WEIGHT" source="#Armature_skl_root-node-skin-weights" offset="1"/>
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+					<v>1 0 1 1 2 2 2 3 3 4 3 5 4 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<!--This lists each of the 'bones' in the BMD model, listing each bone's individual Scale, Rotation, Translation transformation in the reverse of the order in which they should be multiplied to form an SRT  matrix. This will then be multiplied recursively by the parents' transformations to get the final transformation for this joint.-->
+			<node id="skl_root" name="skl_root" sid="skl_root" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+				<node id="flag_start" name="flag_start" sid="flag_start" type="JOINT">
+					<translate sid="translate">-0.154541 62.5 0</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+					<node id="flag01" name="flag01" sid="flag01" type="JOINT">
+						<translate sid="translate">0.154541 0 -13.47095</translate>
+						<rotate sid="rotationZ">0 0 1 0</rotate>
+						<rotate sid="rotationY">0 1 0 0</rotate>
+						<rotate sid="rotationX">1 0 0 0</rotate>
+						<scale sid="scale">1 1 1</scale>
+						<node id="flag02" name="flag02" sid="flag02" type="JOINT">
+							<translate sid="translate">0 0 -13.7666</translate>
+							<rotate sid="rotationZ">0 0 1 0</rotate>
+							<rotate sid="rotationY">0 1 0 0</rotate>
+							<rotate sid="rotationX">1 0 0 0</rotate>
+							<scale sid="scale">1 1 1</scale>
+							<node id="flag03" name="flag03" sid="flag03" type="JOINT">
+								<translate sid="translate">0 0 -13.8501</translate>
+								<rotate sid="rotationZ">0 0 1 0</rotate>
+								<rotate sid="rotationY">0 1 0 0</rotate>
+								<rotate sid="rotationX">1 0 0 0</rotate>
+								<scale sid="scale">1 1 1</scale>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+			<node id="skl_root-node" name="skl_root-node" type="NODE">
+				<translate sid="location">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+				<instance_controller url="#Armature_skl_root-node-skin">
+					<skeleton>#skl_root</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="mat_obj_race_flag-material" target="#mat_obj_race_flag-material"/>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

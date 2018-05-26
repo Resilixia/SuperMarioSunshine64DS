@@ -1,0 +1,16 @@
+newmtl mat_m_kil_env
+Ka 0.5019608 0.5019608 0.5019608
+Kd 0.972549 0.972549 0.972549
+d 1
+Tr 1
+map_Ka mat_m_kil_env.png
+map_Kd mat_m_kil_env.png
+map_d mat_m_kil_env.png
+newmtl mat_m_killer
+Ka 0.5019608 0.5019608 0.5019608
+Kd 0.972549 0.972549 0.972549
+d 1
+Tr 1
+map_Ka mat_m_killer.png
+map_Kd mat_m_killer.png
+map_d mat_m_killer.png

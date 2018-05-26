@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAnimation>
+	<Textures>poihana_all.0#poihana_all.1#poihana_all.2#poihana_all.3#poihana_all.3</Textures>
+	<Materials>poihana_all#poihana_all(2)#poihana_all(3)</Materials>
+	<Animations>
+	</Animations>
+</TextureAnimation>

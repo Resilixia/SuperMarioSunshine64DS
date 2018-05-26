@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.2 PRIVATE BETA 20140903-->
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Fiachra</author>
+			<authoring_tool>SM64DS Editor v2.2 PRIVATE BETA 20140903</authoring_tool>
+		</contributor>
+		<created>2014-09-06T11:17:01</created>
+		<modified>2014-09-06T11:17:01</modified>
+		<unit name="meter" meter="1" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="nokonoko_shell-img" name="nokonoko_shell-img">
+			<init_from>nokonoko_shell.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="mat_shell-effect">
+			<profile_COMMON>
+				<newparam sid="nokonoko_shell-img-surface">
+					<surface type="2D">
+						<init_from>nokonoko_shell-img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="nokonoko_shell-img-sampler">
+					<sampler2D>
+						<source>nokonoko_shell-img-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1.0</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.5176471 0.5176471 0.5176471 1.0</color>
+						</ambient>
+						<diffuse>
+							<texture texture="nokonoko_shell-img-sampler" texcoord="UVMap" />
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1.0</color>
+						</specular>
+						<transparency>
+							<float sid="transparency">1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="mat_shell-material" name="mat_shell">
+			<instance_effect url="#mat_shell-effect" />
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="shell_g_model-mesh" name="shell_g_model-mesh">
+			<mesh>
+				<source id="shell_g_model-mesh-positions">
+					<float_array id="shell_g_model-mesh-positions-array" count="327">1.290039 9.40332 0 1.365234 7.587402 -3.619629 0 9.40332 -1.446289 -1.365234 7.587402 -3.619629 0 9.40332 -1.446289 -1.290039 9.40332 0 -3.390625 7.587402 0 -1.290039 9.40332 0 -1.365234 7.587402 3.619629 -3.214355 5.40918 3.431152 -1.365234 7.587402 3.619629 0 5.849121 4.75 0 5.339844 5.673828 0 5.849121 4.75 3.214355 5.40918 3.431152 3.818359 4.749023 4.155273 3.214355 5.40918 3.431152 5.399902 4.135254 0 0 9.40332 1.446289 1.365234 7.587402 3.619629 0 9.40332 1.446289 3.390625 7.587402 0 1.290039 9.40332 0 3.214355 5.40918 -3.431152 1.365234 7.587402 -3.619629 0 5.888672 -4.90918 0 5.339844 -5.673828 0 5.888672 -4.90918 -3.214355 5.40918 -3.431152 -3.818359 4.749023 -4.155273 -3.214355 5.40918 -3.431152 -5.399902 4.135254 0 1.365234 7.587402 3.619629 4.589355 4.769043 0 3.214355 5.40918 -3.431152 3.818359 4.749023 -4.155273 -1.365234 7.587402 -3.619629 -4.589355 4.769043 0 -3.214355 5.40918 3.431152 0 2.179199 4.662598 -2.899414 3.588379 3.125 0 1.902344 3.739746 -2.580078 1.376465 2.162109 0 1.902344 3.739746 0 0.7729492 2.851563 0 0.06152344 0 0 0.7729492 2.851563 2.580078 1.376465 2.162109 0 5.339844 -5.673828 3.818359 4.749023 -4.155273 0 0.04296875 0 5.399902 4.135254 0 0 0.04296875 0 3.818359 4.749023 4.155273 -5.399902 4.135254 0 -3.818359 4.749023 4.155273 0 5.339844 5.673828 -3.818359 4.749023 4.155273 2.899414 3.588379 -3.125 0 2.163574 -4.206543 0 4.369629 -4.723145 -2.899414 3.588379 -3.125 0 4.369629 -4.723145 -3.818359 4.749023 -4.155273 -3.818359 4.749023 -4.155273 -2.899414 3.588379 3.125 0 2.179199 4.662598 0 4.436523 4.724609 2.899414 3.588379 3.125 0 4.436523 4.724609 0 2.163574 -4.206543 -2.620117 1.36377 -2.162109 -2.899414 3.588379 -3.125 -4.287109 3.296387 0 -2.899414 3.588379 -3.125 2.620117 1.36377 -2.162109 0 0.06152344 0 0 0.7729492 -2.960938 -2.620117 1.36377 -2.162109 0 0.7729492 -2.960938 4.287109 3.296387 0 2.580078 1.376465 2.162109 2.620117 1.36377 -2.162109 0 0.06152344 0 2.620117 1.36377 -2.162109 4.287109 3.296387 0 2.620117 1.36377 -2.162109 2.899414 3.588379 -3.125 0 2.163574 -4.206543 2.899414 3.588379 -3.125 2.620117 1.36377 -2.162109 0 0.7729492 -2.960938 0 2.163574 -4.206543 -2.620117 1.36377 -2.162109 0 2.163574 -4.206543 -4.287109 3.296387 0 -2.620117 1.36377 -2.162109 -2.580078 1.376465 2.162109 -2.580078 1.376465 2.162109 -3.818359 4.749023 4.155273 -3.818359 4.749023 4.155273 2.899414 3.588379 3.125 2.899414 3.588379 3.125 -2.580078 1.376465 2.162109 -2.899414 3.588379 3.125 -4.287109 3.296387 0 4.287109 3.296387 0 2.899414 3.588379 3.125 2.580078 1.376465 2.162109</float_array>
+					<technique_common>
+						<accessor source="#shell_g_model-mesh-positions-array" count="109" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="shell_g_model-mesh-normals">
+					<float_array id="shell_g_model-mesh-normals-array" count="327">29.75 56.625 0 25.5 43.375 -39.625 0 58.875 -25 -25.5 43.375 -39.625 -25.5 43.375 -39.625 -29.75 56.625 0 -50.625 39.25 0 -50.625 39.25 0 -25.25 42.5 40.625 -38.375 43.5 27.125 -38.375 43.5 27.125 0 39.25 50.5 0 32 55.5 0 32 55.5 38.375 43.5 27.125 46.25 2.5 44.125 46.25 2.5 44.125 58.875 25 0 0 58.875 25 25.25 42.5 40.625 25.25 42.5 40.625 51.25 38.375 0 51.25 38.375 0 39 42.625 -27.375 39 42.625 -27.375 0 38.625 -51 0 28.75 -57.25 0 28.75 -57.25 -39 42.625 -27.375 -46.25 2.5 -44.125 -46.25 2.5 -44.125 -58.875 25 0 38.375 43.5 27.125 51.25 38.375 0 58.875 25 0 46.25 2.5 -44.125 -39 42.625 -27.375 -50.625 39.25 0 -58.875 25 0 0 -38.375 51.25 -40.25 -27.5 41.5 0 -45.375 45.125 -36.875 -45.125 26.375 -36.875 -45.125 26.375 0 -53.875 34.625 0 -64 0 0 -64 0 36.875 -45.125 26.375 0 28.75 -57.25 46.25 2.5 -44.125 0 -64 0 58.875 25 0 58.875 25 0 46.25 2.5 44.125 -58.875 25 0 -46.25 2.5 44.125 0 32 55.5 0 32 55.5 39.75 -19.875 -46.125 0 -29.625 -56.75 0 -14.625 -62.375 -39.75 -19.875 -46.125 -39.75 -19.875 -46.125 -46.25 2.5 -44.125 -58.875 25 0 -40.25 -27.5 41.5 0 -38.375 51.25 0 -1.75 63.875 40.25 -27.5 41.5 40.25 -27.5 41.5 0 -29.625 -56.75 -37.875 -45.125 -24.875 -39.75 -19.875 -46.125 -57.125 -28.75 0.25 -57.125 -28.75 0.25 37.875 -45.125 -24.875 0 -64 0 0 -55.125 -32.625 -37.875 -45.125 -24.875 -37.875 -45.125 -24.875 57.125 -28.75 0.25 36.875 -45.125 26.375 37.875 -45.125 -24.875 0 -64 0 0 -64 0 57.125 -28.75 0.25 37.875 -45.125 -24.875 39.75 -19.875 -46.125 0 -29.625 -56.75 0 -29.625 -56.75 37.875 -45.125 -24.875 0 -55.125 -32.625 0 -29.625 -56.75 -37.875 -45.125 -24.875 -37.875 -45.125 -24.875 -57.125 -28.75 0.25 -37.875 -45.125 -24.875 -36.875 -45.125 26.375 0 -64 0 -46.25 2.5 44.125 -58.875 25 0 40.25 -27.5 41.5 36.875 -45.125 26.375 -36.875 -45.125 26.375 -40.25 -27.5 41.5 -57.125 -28.75 0.25 57.125 -28.75 0.25 40.25 -27.5 41.5 36.875 -45.125 26.375</float_array>
+					<technique_common>
+						<accessor source="#shell_g_model-mesh-normals-array" count="109" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="shell_g_model-mesh-map-0">
+					<float_array id="shell_g_model-mesh-map-0-array" count="218">1.044922 1.001953 1.171875 0.6015625 1 0.875 0.828125 0.6015625 1 0.875 0.9550781 1.001953 0.7773438 1 0.9550781 1.001953 0.8251953 1.410156 0.6865234 1.625 0.8251953 1.410156 1 1.625 1 1.699219 1 1.625 1.313477 1.625 1.366211 1.699219 1.313477 1.625 1.356445 1 1 1.128906 1.174805 1.410156 1 1.128906 1.222656 1.001953 1.044922 1.001953 1.3125 0.375 1.171875 0.6015625 1 0.375 1 0.3007813 1 0.375 0.6884766 0.375 0.6337891 0.3007813 0.6884766 0.375 0.6435547 1 1.174805 1.410156 1.313477 1 1.3125 0.375 1.366211 0.3007813 0.828125 0.6015625 0.6875 1 0.6865234 1.625 0 0.8320313 -0.1650391 0.7421875 0 0.7167969 -0.1884766 0.6035156 0 0.7167969 0 0.7363281 0 0.2304688 0 0.7363281 0.1904297 0.6035156 0.4667969 0.234375 0.4667969 0.2382813 0.4667969 -0.171875 0.4667969 0.234375 0.4667969 -0.171875 0.4667969 0.2421875 0.4667969 0.234375 0.4667969 0.2421875 0.4667969 0.2324219 0.4667969 0.2421875 0.2021484 0.8574219 0.3105469 0.7285156 0.2460938 0.5097656 0.2021484 0.8574219 0.2460938 0.5097656 0.4667969 0.2382813 0.4667969 0.2382813 0.3583984 0.1523438 0.2148438 0.40625 0.3515625 0.6679688 0.3583984 0.1523438 0.3515625 0.6679688 -0.1728516 0.7890625 -0.1738281 0.4472656 -0.3613281 0.6738281 -0.3603516 0.1972656 -0.3613281 0.6738281 0.1757813 0.01367188 0 0.3359375 0 -0.08984375 -0.1738281 0.01367188 0 -0.08984375 0.375 0.2792969 0.07910156 0.5761719 0.07910156 0.03125 0 0.3261719 0.07910156 0.03125 0.359375 0.08007813 0.1738281 0.4472656 0.3613281 0.6738281 0.1728516 0.7890625 0.3613281 0.6738281 0.1757813 -0.1230469 0 -0.1738281 0 -0.5410156 -0.1738281 -0.1230469 0 -0.5410156 -0.375 0.2792969 -0.07910156 0.03125 -0.07910156 0.5761719 -0.07910156 0.5761719 0.6337891 1.699219 0.6337891 1.699219 0.1660156 0.7421875 0.1660156 0.7421875 -0.2021484 0.6347656 -0.3300781 0.71875 -0.3564453 0.2636719 0.3564453 0.2636719 0.3300781 0.71875 0.203125 0.6347656</float_array>
+					<technique_common>
+						<accessor source="#shell_g_model-mesh-map-0-array" count="109" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="shell_g_model-mesh-colors">
+					<float_array id="shell_g_model-mesh-colors-array" count="327">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#shell_g_model-mesh-colors-array" count="109" stride="3">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="shell_g_model-mesh-vertices">
+					<input semantic="POSITION" source="#shell_g_model-mesh-positions" />
+				</vertices>
+				<polylist material="mat_shell-material" count="75">
+					<input semantic="VERTEX" source="#shell_g_model-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#shell_g_model-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#shell_g_model-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#shell_g_model-mesh-colors" offset="3" />
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 4 3 3 3 3 3 3 3</vcount>
+					<p>0 0 0 0 1 1 1 0 2 2 2 0 3 3 3 0 2 3 2 0 1 1 1 0 2 2 2 0 3 3 3 0 5 5 5 0 6 6 6 0 5 6 5 0 3 3 3 0 5 5 5 0 6 6 6 0 8 8 8 0 9 9 9 0 8 9 8 0 6 6 6 0 8 8 8 0 9 9 9 0 11 11 11 0 12 12 12 0 11 12 11 0 9 9 9 0 11 11 11 0 12 12 12 0 14 14 14 0 15 15 15 0 14 15 14 0 12 12 12 0 14 14 14 0 15 15 15 0 17 17 17 0 5 5 5 0 8 8 8 0 18 18 18 0 19 19 19 0 18 19 18 0 8 8 8 0 18 18 18 0 19 19 19 0 0 0 0 0 21 21 21 0 0 21 0 0 19 19 19 0 0 0 0 0 21 21 21 0 1 1 1 0 23 23 23 0 1 23 1 0 21 21 21 0 1 1 1 0 23 23 23 0 25 25 25 0 26 26 26 0 25 26 25 0 23 23 23 0 25 25 25 0 26 26 26 0 28 28 28 0 29 29 29 0 28 29 28 0 26 26 26 0 28 28 28 0 29 29 29 0 31 31 31 0 8 8 8 0 11 11 11 0 19 19 19 0 14 14 14 0 19 14 19 0 11 11 11 0 19 19 19 0 14 14 14 0 21 21 21 0 33 21 33 0 21 21 21 0 14 14 14 0 21 21 21 0 33 21 33 0 23 23 23 0 17 17 17 0 23 17 23 0 33 21 33 0 23 23 23 0 17 17 17 0 35 35 35 0 1 1 1 0 25 25 25 0 3 3 3 0 28 28 28 0 3 28 3 0 25 25 25 0 3 3 3 0 28 28 28 0 6 6 6 0 37 6 37 0 6 6 6 0 28 28 28 0 6 6 6 0 37 6 37 0 9 9 9 0 31 31 31 0 9 31 9 0 37 6 37 0 39 39 39 0 40 40 40 0 41 41 41 0 42 42 42 0 41 42 41 0 40 40 40 0 41 41 41 0 42 42 42 0 44 44 44 0 45 45 45 0 44 45 44 0 42 42 42 0 44 44 44 0 45 45 45 0 47 47 47 0 26 26 48 0 35 35 49 0 50 45 50 0 17 17 48 0 50 17 50 0 35 35 49 0 50 45 50 0 17 17 48 0 15 15 53 0 31 31 48 0 50 45 50 0 55 55 53 0 12 12 56 0 55 12 53 0 50 45 50 0 58 58 58 0 59 59 59 0 60 60 60 0 61 61 58 0 60 61 60 0 59 59 59 0 26 26 48 0 50 45 50 0 29 29 49 0 31 31 48 0 29 31 49 0 50 45 50 0 40 40 65 0 39 39 66 0 67 67 67 0 68 68 65 0 67 68 67 0 39 39 66 0 59 59 70 0 71 71 71 0 61 61 72 0 73 73 73 0 61 73 72 0 71 71 71 0 75 75 75 0 45 45 76 0 77 77 77 0 71 71 78 0 77 71 77 0 45 45 76 0 80 80 80 0 47 47 81 0 75 75 82 0 45 45 83 0 75 45 82 0 47 47 81 0 80 80 85 0 75 75 86 0 58 58 87 0 59 59 88 0 58 59 87 0 75 75 86 0 75 75 90 0 77 77 91 0 59 59 92 0 71 71 93 0 59 71 92 0 77 77 91 0 73 73 95 0 71 71 96 0 42 42 97 0 45 45 83 0 42 45 97 0 71 71 96 0 12 12 12 0 9 9 9 0 55 55 99 0 31 31 31 0 55 31 99 0 9 9 9 0 39 39 39 0 41 41 41 0 68 68 101 0 47 47 47 0 68 47 101 0 41 41 41 0 0 0 0 0 2 2 2 0 5 5 5 0 18 18 18 0 31 31 31 0 37 6 37 0 28 28 28 0 17 17 17 0 33 21 33 0 14 14 14 0 26 26 26 0 23 23 23 0 35 35 35 0 44 44 44 0 47 47 47 0 41 41 41 0 42 42 103 0 40 40 104 0 73 73 105 0 80 80 106 0 68 68 107 0 47 47 108 0 15 15 53 0 12 12 56 0 50 45 50 0</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="shell_g_model-skin" name="skinCluster_shell_g_model">
+			<skin source="#shell_g_model-mesh">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="shell_g_model-skin-joints">
+					<Name_array id="shell_g_model-skin-joints-array" count="1">shell_g_model</Name_array>
+					<technique_common>
+						<accessor source="#shell_g_model-skin-joints-array" count="1" stride="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<!--The inverse bind pose for a joint is given by the inverse bind pose of the parent joint (where present) multiplied by the inverse of the current joint's transformation matrix.-->
+				<source id="shell_g_model-skin-bind_poses">
+					<float_array id="shell_g_model-skin-bind_poses-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#shell_g_model-skin-bind_poses-array" count="1" stride="16">
+							<param name="TRANSFORM" type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="shell_g_model-skin-weights">
+					<!--The BMD format does not have any concept of 'weights', instead each vertex is assigned to one bone-->
+					<float_array id="shell_g_model-skin-weights-array" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#shell_g_model-skin-weights-array" count="1" stride="1">
+							<param name="WEIGHT" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#shell_g_model-skin-joints" />
+					<input semantic="INV_BIND_MATRIX" source="#shell_g_model-skin-bind_poses" />
+				</joints>
+				<!--Each vertex will be assigned to only one bone with a weight of 1-->
+				<vertex_weights count="109">
+					<input semantic="JOINT" source="#shell_g_model-skin-joints" offset="0" />
+					<input semantic="WEIGHT" source="#shell_g_model-skin-weights" offset="1" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<!--This list contains two values for each vertex, the first is the bone ID and the second is the index of the vertex weight '1' (0)-->
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<!--This lists each of the 'bones' in the BMD model, listing each bone's individual Scale, Rotation, Translation transformation in the reverse of the order in which they should be multiplied to form an SRT  matrix. This will then be multiplied recursively by the parents' transformations to get the final transformation for this joint.-->
+			<node id="shell_g_model" name="shell_g_model" sid="shell_g_model" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+			</node>
+			<node id="shell_g_model-node" name="shell_g_model-node" type="NODE">
+				<instance_controller url="#shell_g_model-skin">
+					<skeleton>#shell_g_model</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="mat_shell-material" target="#mat_shell-material">
+								<bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene" />
+	</scene>
+</COLLADA>

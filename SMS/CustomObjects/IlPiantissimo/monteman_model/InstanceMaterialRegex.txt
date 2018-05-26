@@ -1,0 +1,5 @@
+Replace:
+(<instance_material.*)(/>)
+
+with:
+$1>\r\n<bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0" />\r\n</instance_material>

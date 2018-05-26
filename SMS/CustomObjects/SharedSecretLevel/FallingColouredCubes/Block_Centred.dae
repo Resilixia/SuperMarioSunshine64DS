@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Blender User</author>
+			<authoring_tool>Blender 2.70.0 commit date:2014-04-10, commit time:11:49, hash:f93bc76</authoring_tool>
+		</contributor>
+		<created>2015-05-04T16:29:58</created>
+		<modified>2015-05-04T16:29:58</modified>
+		<unit name="meter" meter="1"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="SolidBlock_Yellow" name="SolidBlock_Yellow">
+			<init_from>Textures_VFlip/SolidBlock_Yellow.png</init_from>
+		</image>
+		<image id="SolidBlock_LightBlue" name="SolidBlock_LightBlue">
+			<init_from>Textures_VFlip/SolidBlock_LightBlue.png</init_from>
+		</image>
+		<image id="SolidBlock_Pink" name="SolidBlock_Pink">
+			<init_from>Textures_VFlip/SolidBlock_Pink.png</init_from>
+		</image>
+		<image id="SolidBlock_Orange" name="SolidBlock_Orange">
+			<init_from>Textures_VFlip/SolidBlock_Orange.png</init_from>
+		</image>
+		<image id="SolidBlock_Purple" name="SolidBlock_Purple">
+			<init_from>Textures_VFlip/SolidBlock_Purple.png</init_from>
+		</image>
+		<image id="SolidBlock_Green" name="SolidBlock_Green">
+			<init_from>Textures_VFlip/SolidBlock_Green.png</init_from>
+		</image>
+		<image id="Outline_Green" name="Outline_Green">
+			<init_from>Textures_VFlip/Outline_Green.png</init_from>
+		</image>
+		<image id="SolidBlock_DarkBlue" name="SolidBlock_DarkBlue">
+			<init_from>Textures_VFlip/SolidBlock_DarkBlue.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="mat_block-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_Yellow-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_Yellow</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_Yellow-sampler">
+					<sampler2D>
+						<source>SolidBlock_Yellow-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_Yellow-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_LightBlue-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_LightBlue-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_LightBlue</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_LightBlue-sampler">
+					<sampler2D>
+						<source>SolidBlock_LightBlue-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_LightBlue-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_Pink-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_Pink-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_Pink</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_Pink-sampler">
+					<sampler2D>
+						<source>SolidBlock_Pink-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_Pink-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_Orange-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_Orange-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_Orange</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_Orange-sampler">
+					<sampler2D>
+						<source>SolidBlock_Orange-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_Orange-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_Purple-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_Purple-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_Purple</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_Purple-sampler">
+					<sampler2D>
+						<source>SolidBlock_Purple-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_Purple-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_Green-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_Green-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_Green</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_Green-sampler">
+					<sampler2D>
+						<source>SolidBlock_Green-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_Green-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_Outline_Green-effect">
+			<profile_COMMON>
+				<newparam sid="Outline_Green-surface">
+					<surface type="2D">
+						<init_from>Outline_Green</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Outline_Green-sampler">
+					<sampler2D>
+						<source>Outline_Green-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Outline_Green-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="mat_block_DarkBlue-effect">
+			<profile_COMMON>
+				<newparam sid="SolidBlock_DarkBlue-surface">
+					<surface type="2D">
+						<init_from>SolidBlock_DarkBlue</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SolidBlock_DarkBlue-sampler">
+					<sampler2D>
+						<source>SolidBlock_DarkBlue-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="SolidBlock_DarkBlue-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>repeat repeat</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="mat_block" name="mat_block">
+			<instance_effect url="#mat_block-effect"/>
+		</material>
+		<material id="mat_block_LightBlue" name="mat_block_LightBlue">
+			<instance_effect url="#mat_block_LightBlue-effect"/>
+		</material>
+		<material id="mat_block_Pink" name="mat_block_Pink">
+			<instance_effect url="#mat_block_Pink-effect"/>
+		</material>
+		<material id="mat_block_Orange" name="mat_block_Orange">
+			<instance_effect url="#mat_block_Orange-effect"/>
+		</material>
+		<material id="mat_block_Purple" name="mat_block_Purple">
+			<instance_effect url="#mat_block_Purple-effect"/>
+		</material>
+		<material id="mat_block_Green" name="mat_block_Green">
+			<instance_effect url="#mat_block_Green-effect"/>
+		</material>
+		<material id="mat_block_Outline_Green" name="mat_block_Outline_Green">
+			<instance_effect url="#mat_block_Outline_Green-effect"/>
+		</material>
+		<material id="mat_block_DarkBlue" name="mat_block_DarkBlue">
+			<instance_effect url="#mat_block_DarkBlue-effect"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="world_root-mesh-mesh" name="world_root-mesh">
+			<mesh>
+				<source id="world_root-mesh-mesh-positions">
+					<float_array id="world_root-mesh-mesh-positions-array" count="72">-18.75 -18.75 -18.75 -18.75 -18.75 18.75 -18.75 18.75 18.75 -18.75 18.75 -18.75 18.75 -18.75 18.75 18.75 -18.75 -18.75 18.75 18.75 -18.75 18.75 18.75 18.75 -18.75 -18.75 -18.75 18.75 -18.75 -18.75 18.75 -18.75 18.75 -18.75 -18.75 18.75 -18.75 18.75 -18.75 18.75 18.75 -18.75 18.75 -18.75 -18.75 -18.75 -18.75 -18.75 -18.75 18.75 18.75 18.75 18.75 18.75 18.75 18.75 -18.75 -18.75 18.75 -18.75 -18.75 -18.75 18.75 18.75 -18.75 18.75 18.75 18.75 18.75 -18.75 18.75 18.75</float_array>
+					<technique_common>
+						<accessor source="#world_root-mesh-mesh-positions-array" count="24" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="world_root-mesh-mesh-normals">
+					<float_array id="world_root-mesh-mesh-normals-array" count="36">-1 0 0 1 0 0 0 -1 0 0 0 -1 0 1 0 0 0 1 -1 0 0 1 0 0 0 -1 0 0 0 -1 0 1 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#world_root-mesh-mesh-normals-array" count="12" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="world_root-mesh-mesh-map-0">
+					<float_array id="world_root-mesh-mesh-map-0-array" count="72">0.9999004 1.00195e-4 0.9998997 0.9999004 9.97782e-5 0.9998996 0.9999004 1.00195e-4 0.9998997 0.9999004 9.97782e-5 0.9998996 0.9999001 9.998e-5 0.9999001 0.9999001 1.00018e-4 0.9999001 1.00088e-4 0.9999 9.998e-5 9.998e-5 0.9998999 9.998e-5 9.998e-5 1.00018e-4 0.9999001 9.998e-5 0.9999001 0.9998999 0.9998998 9.998e-5 0.9998998 0.9998999 1.00034e-4 0.9999 1.00404e-4 9.97186e-5 0.9999004 1.00195e-4 9.97782e-5 0.9998996 1.00404e-4 9.95994e-5 0.9999004 1.00195e-4 9.97782e-5 0.9998996 9.998e-5 1.00056e-4 0.9999001 9.998e-5 1.00018e-4 0.9999001 0.9998999 0.9998998 1.00088e-4 0.9999 0.9998999 9.998e-5 1.00094e-4 0.9998999 9.998e-5 1.00018e-4 0.9999001 0.9998999 9.998e-5 1.00088e-4 0.9998998 9.998e-5 1.00034e-4 0.9999</float_array>
+					<technique_common>
+						<accessor source="#world_root-mesh-mesh-map-0-array" count="36" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="world_root-mesh-mesh-vertices">
+					<input semantic="POSITION" source="#world_root-mesh-mesh-positions"/>
+				</vertices>
+				<polylist material="mat_block" count="12">
+					<input semantic="VERTEX" source="#world_root-mesh-mesh-vertices" offset="0"/>
+					<input semantic="NORMAL" source="#world_root-mesh-mesh-normals" offset="1"/>
+					<input semantic="TEXCOORD" source="#world_root-mesh-mesh-map-0" offset="2" set="0"/>
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+					<p>1 0 0 2 0 1 3 0 2 5 1 3 6 1 4 7 1 5 5 2 6 4 2 7 1 2 8 6 3 9 5 3 10 0 3 11 7 4 12 6 4 13 3 4 14 4 5 15 7 5 16 2 5 17 0 6 18 1 6 19 3 6 20 4 7 21 5 7 22 7 7 23 0 8 24 5 8 25 1 8 26 3 9 27 6 9 28 0 9 29 2 10 30 7 10 31 3 10 32 1 11 33 4 11 34 2 11 35</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="Armature_world_root-node-skin" name="Armature">
+			<skin source="#world_root-mesh-mesh">
+				<bind_shape_matrix>1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</bind_shape_matrix>
+				<source id="Armature_world_root-node-skin-joints">
+					<Name_array id="Armature_world_root-node-skin-joints-array" count="1">world_root</Name_array>
+					<technique_common>
+						<accessor source="#Armature_world_root-node-skin-joints-array" count="1" stride="1">
+							<param name="JOINT" type="name"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Armature_world_root-node-skin-bind_poses">
+					<float_array id="Armature_world_root-node-skin-bind_poses-array" count="16">1 0 0 0 0 -1.62921e-7 1 0 0 -1 -1.62921e-7 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#Armature_world_root-node-skin-bind_poses-array" count="1" stride="16">
+							<param name="TRANSFORM" type="float4x4"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Armature_world_root-node-skin-weights">
+					<float_array id="Armature_world_root-node-skin-weights-array" count="24">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#Armature_world_root-node-skin-weights-array" count="24" stride="1">
+							<param name="WEIGHT" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#Armature_world_root-node-skin-joints"/>
+					<input semantic="INV_BIND_MATRIX" source="#Armature_world_root-node-skin-bind_poses"/>
+				</joints>
+				<vertex_weights count="24">
+					<input semantic="JOINT" source="#Armature_world_root-node-skin-joints" offset="0"/>
+					<input semantic="WEIGHT" source="#Armature_world_root-node-skin-weights" offset="1"/>
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+					<v>0 0 0 1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0 21 0 22 0 23</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node id="world_root" name="world_root" sid="world_root" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+			</node>
+			<node id="world_root-node" name="world_root-node" type="NODE">
+				<instance_controller url="#Armature_world_root-node-skin">
+					<skeleton>#world_root</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="mat_block" target="#mat_block"/>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

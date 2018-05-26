@@ -1,0 +1,69 @@
+1. Replace library_effects with that below:
+  <library_effects>
+    <effect id="mat_shiny-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.05 0.24 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.01444384 0.2961383 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.173352 0.5 0.1172753 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+		<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+					</technique>
+				</extra>
+      </profile_COMMON>
+    </effect>
+    <effect id="mat_flat-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+		<extra>
+		<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+					</technique>
+				</extra>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+
+2. Comment out the "<input semantic="NORMAL"" line for mat_flat
+
+3. Import with scale 80

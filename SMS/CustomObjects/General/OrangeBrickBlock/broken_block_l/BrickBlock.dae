@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Blender User</author>
+			<authoring_tool>Blender 2.70.0 commit date:2014-04-10, commit time:11:49, hash:f93bc76</authoring_tool>
+		</contributor>
+		<created>2015-05-02T11:22:28</created>
+		<modified>2015-05-02T11:22:28</modified>
+		<unit name="meter" meter="1"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="brick_SMG" name="brick_SMG">
+			<init_from>Textures_VFlip/brick_SMG_64x64.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="mat_b_block_l-effect">
+			<profile_COMMON>
+				<newparam sid="brick_SMG-surface">
+					<surface type="2D">
+						<init_from>brick_SMG</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="brick_SMG-sampler">
+					<sampler2D>
+						<source>brick_SMG-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="brick_SMG-sampler" texcoord="world_root-mesh-map-0"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="mat_b_block_l" name="mat_b_block_l">
+			<instance_effect url="#mat_b_block_l-effect"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="world_root-mesh-mesh" name="world_root-mesh">
+			<mesh>
+				<source id="world_root-mesh-mesh-positions">
+					<float_array id="world_root-mesh-mesh-positions-array" count="84">-12.5 2.98023e-6 -12.5 12.5 -2.98023e-6 12.5 12.5 25 -12.49999 -12.5 25 12.50001 -12.5 25 -12.49999 -12.5 -2.98023e-6 12.5 -12.5 25 -6.249994 12.5 25 12.50001 12.5 25 -6.249994 -12.5 25 6.250006 12.5 25 6.250006 -6.25 25 -6.249994 -6.25 25 6.250006 6.25 25 -6.249994 6.25 25 6.250006 6.25 25 5.96046e-6 -6.25 25 5.96046e-6 -6.249989 1.98188e-6 12.50001 12.49999 -1.09279e-6 -12.50001 -6.250011 3.86933e-6 -12.49999 6.250011 -3.86933e-6 12.5 6.249989 -1.98188e-6 -12.5 -6.249994 2.45374e-6 6.25001 6.250006 -3.39746e-6 6.249999 -6.250006 3.39746e-6 -6.24999 6.249994 -2.45374e-6 -6.250001 -5.24521e-6 -3.34284e-6 -6.249996 5.72205e-6 -4.28656e-6 6.250004</float_array>
+					<technique_common>
+						<accessor source="#world_root-mesh-mesh-positions-array" count="28" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="world_root-mesh-mesh-normals">
+					<float_array id="world_root-mesh-mesh-normals-array" count="96">-1 0 0 0 1 0 0 -2.28882e-7 1 -1 0 0 0 2.28882e-7 -1 0 -2.28882e-7 1 0 1 0 0 1 0 0 1 0 0 1 6.10352e-7 0 1 6.10352e-7 0 1 6.10352e-7 0 1 6.10352e-7 0 1 1.2207e-6 0 1 1.2207e-6 0 1 0 0 1 0 1.42255e-7 -1 0 -4.68096e-7 -1 0 -4.68096e-7 -1 0 -4.68096e-7 -1 0 -4.68096e-7 -1 0 -1.07845e-6 -1 0 -1.07845e-6 -1 0 1.42255e-7 -1 0 1.42255e-7 -1 0 1 -4.57764e-7 0 -3.05176e-7 5.34058e-7 -1 1 0 -4.57764e-7 7.93936e-7 -1 0 1.42255e-7 -1 -2.38419e-7 1.42255e-7 -1 0</float_array>
+					<technique_common>
+						<accessor source="#world_root-mesh-mesh-normals-array" count="32" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="world_root-mesh-mesh-map-0">
+					<float_array id="world_root-mesh-mesh-map-0-array" count="192">0.9999004 0.314095 0.9998997 1.220736 9.97782e-5 1.220736 0.9999498 0.9681493 0.9999501 0.7747424 5.01871e-5 0.7747424 0.9998998 0.06511175 0.9998998 0.9697009 1.00046e-4 0.9697009 1.00404e-4 0.314095 0.9999004 0.314095 9.97782e-5 1.220736 0.9998999 0.9697009 1.00076e-4 0.9697009 0.9998999 0.06511175 9.99868e-5 0.06511175 0.9998998 0.06511175 1.00046e-4 0.9697009 4.98891e-5 0.9681482 0.9999498 0.9681493 5.01871e-5 0.7747424 0.9999499 0.968129 0.9999499 0.7747424 5.00083e-5 0.7747424 5.00083e-5 0.968129 0.9999499 0.968129 5.00083e-5 0.7747424 0.7499646 5.30183e-5 0.2500354 0.2188791 0.7499647 0.2188791 0.2500354 5.30779e-5 0.2500354 0.2188791 0.7499646 5.30183e-5 0.2500354 5.30183e-5 0.2500354 0.2188791 0.7499646 0.2188791 0.7499647 5.30183e-5 0.2500354 5.30183e-5 0.7499646 0.2188791 0.2422228 0.7578302 0.2422228 0.5078655 0.7421521 0.7578301 0.2422228 0.5078655 0.7421522 0.5078655 0.7421521 0.7578301 0.2422226 0.5078659 0.7421519 0.5078653 0.242223 0.7578305 0.242223 0.7578305 0.7421519 0.5078653 0.7421523 0.7578298 0.9999499 0.968129 5.00083e-5 0.7747424 0.9999499 0.7747424 0.7499646 5.30183e-5 0.7499647 0.2188791 0.2500354 0.2188791 0.2500354 5.30779e-5 0.7499646 5.30183e-5 0.2500354 0.2188791 0.2500354 5.30183e-5 0.7499646 0.2188791 0.2500354 0.2188791 0.7499647 5.30183e-5 0.7499646 0.2188791 0.2500354 5.30183e-5 0.2422228 0.7578302 0.7421521 0.7578301 0.2422228 0.5078655 0.2422228 0.5078655 0.7421521 0.7578301 0.7421522 0.5078655 0.2422226 0.5078659 0.242223 0.7578305 0.7421519 0.5078653 0.242223 0.7578305 0.7421523 0.7578298 0.7421519 0.5078653 0.9999004 0.314095 0.9998997 1.220736 9.97782e-5 1.220736 1.00076e-4 0.9697009 9.99868e-5 0.06511175 0.9998999 0.06511175 1.00404e-4 0.314095 0.9999004 0.314095 9.97782e-5 1.220736 0.9999498 0.9681493 5.01871e-5 0.7747424 0.9999501 0.7747424 4.98891e-5 0.9681482 5.01871e-5 0.7747424 0.9999498 0.9681493 5.00083e-5 0.968129 5.00083e-5 0.7747424 0.9999499 0.968129</float_array>
+					<technique_common>
+						<accessor source="#world_root-mesh-mesh-map-0-array" count="96" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="world_root-mesh-mesh-vertices">
+					<input semantic="POSITION" source="#world_root-mesh-mesh-positions"/>
+				</vertices>
+				<polylist material="mat_b_block_l" count="32">
+					<input semantic="VERTEX" source="#world_root-mesh-mesh-vertices" offset="0"/>
+					<input semantic="NORMAL" source="#world_root-mesh-mesh-normals" offset="1"/>
+					<input semantic="TEXCOORD" source="#world_root-mesh-mesh-map-0" offset="2" set="0"/>
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+					<p>5 0 0 3 0 1 4 0 2 4 1 3 6 1 4 8 1 5 1 2 6 7 2 7 3 2 8 0 3 9 5 3 10 4 3 11 4 4 12 2 4 13 0 4 14 5 5 15 1 5 16 3 5 17 2 6 18 4 6 19 8 6 20 7 7 21 10 7 22 9 7 23 3 8 24 7 8 25 9 8 26 12 9 27 6 9 28 9 9 29 11 10 30 6 10 31 12 10 32 14 11 33 10 11 34 8 11 35 13 12 36 14 12 37 8 12 38 15 13 39 13 13 40 16 13 41 13 14 42 11 14 43 16 14 44 15 15 45 16 15 46 14 15 47 14 16 48 16 16 49 12 16 50 18 17 51 20 17 52 21 17 53 23 18 54 20 18 55 17 18 56 22 19 57 23 19 58 17 19 59 25 20 60 19 20 61 21 20 62 24 21 63 19 21 64 25 21 65 26 22 66 27 22 67 24 22 68 24 23 69 27 23 70 22 23 71 26 24 72 25 24 73 27 24 74 25 25 75 23 25 76 27 25 77 18 26 78 2 26 79 7 26 80 2 27 81 18 27 82 0 27 83 1 28 84 18 28 85 7 28 86 5 29 87 19 29 88 17 29 89 0 30 90 19 30 91 5 30 92 1 31 93 20 31 94 18 31 95</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="Armature_world_root-node-skin" name="Armature">
+			<skin source="#world_root-mesh-mesh">
+				<bind_shape_matrix>1 0 0 0 0 -1 1.0411e-6 0 0 -1.0411e-6 -1 0 0 0 0 1</bind_shape_matrix>
+				<source id="Armature_world_root-node-skin-joints">
+					<Name_array id="Armature_world_root-node-skin-joints-array" count="1">world_root</Name_array>
+					<technique_common>
+						<accessor source="#Armature_world_root-node-skin-joints-array" count="1" stride="1">
+							<param name="JOINT" type="name"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Armature_world_root-node-skin-bind_poses">
+					<float_array id="Armature_world_root-node-skin-bind_poses-array" count="16">1 0 0 0 0 -1.62921e-7 1 0 0 -1 -1.62921e-7 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#Armature_world_root-node-skin-bind_poses-array" count="1" stride="16">
+							<param name="TRANSFORM" type="float4x4"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Armature_world_root-node-skin-weights">
+					<float_array id="Armature_world_root-node-skin-weights-array" count="28">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#Armature_world_root-node-skin-weights-array" count="28" stride="1">
+							<param name="WEIGHT" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#Armature_world_root-node-skin-joints"/>
+					<input semantic="INV_BIND_MATRIX" source="#Armature_world_root-node-skin-bind_poses"/>
+				</joints>
+				<vertex_weights count="28">
+					<input semantic="JOINT" source="#Armature_world_root-node-skin-joints" offset="0"/>
+					<input semantic="WEIGHT" source="#Armature_world_root-node-skin-weights" offset="1"/>
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+					<v>0 0 0 1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0 21 0 22 0 23 0 24 0 25 0 26 0 27</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node id="world_root" name="world_root" sid="world_root" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+			</node>
+			<node id="world_root-node" name="world_root-node" type="NODE">
+				<instance_controller url="#Armature_world_root-node-skin">
+					<skeleton>#world_root</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="mat_b_block_l" target="#mat_b_block_l"/>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

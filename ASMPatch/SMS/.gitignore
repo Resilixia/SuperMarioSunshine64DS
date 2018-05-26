@@ -1,0 +1,6 @@
+bak/
+build/
+newcode.bin
+newcode.elf
+newcode.sym
+*.nds

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Blender User</author>
+			<authoring_tool>Blender 2.70.0 commit date:2014-04-10, commit time:11:49, hash:f93bc76</authoring_tool>
+		</contributor>
+		<created>2015-06-07T14:50:09</created>
+		<modified>2015-06-07T14:50:09</modified>
+		<unit name="meter" meter="1"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_images/>
+	<library_effects/>
+	<library_materials/>
+	<library_geometries/>
+	<library_controllers/>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node id="Base" name="Base" sid="Base" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+				<node id="CraneArm" name="CraneArm" sid="CraneArm" type="JOINT">
+					<translate sid="translate">1 0 0</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+					<node id="Platform" name="Platform" sid="Platform" type="JOINT">
+						<translate sid="translate">1 0 0</translate>
+						<rotate sid="rotationZ">0 0 1 0</rotate>
+						<rotate sid="rotationY">0 1 0 0</rotate>
+						<rotate sid="rotationX">1 0 0 0</rotate>
+						<scale sid="scale">1 1 1</scale>
+					</node>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

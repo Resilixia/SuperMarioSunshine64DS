@@ -1,0 +1,7 @@
+materials "Eye", "RestOfMask" and "Leaves":
+
+<extra>
+	<technique profile="SM64DSe">
+		<double_sided>1</double_sided>
+	</technique>
+</extra>

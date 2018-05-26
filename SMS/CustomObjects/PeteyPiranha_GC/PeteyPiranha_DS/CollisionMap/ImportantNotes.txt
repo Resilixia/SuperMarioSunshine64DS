@@ -1,0 +1,10 @@
+need rz (y in Blender) 0.5 radians, approx. 28.6478898 degrees to account for 
+rotation in original root bone of rz 0.5 radians
+need rz (y in Blender) -90 degrees as collision map is then rotated on z 90 degrees, 
+related to how model stored before transformations applied
+
+(rz -61.3521102)
+
+Above values wrong.
+
+rz -40

@@ -1,0 +1,32 @@
+# Blender MTL File: 'vr06_New.blend'
+# Material Count: 3
+
+newmtl Sky
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Textures_VFlip/Sky_128.png
+
+newmtl SunflowersOnGround
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Textures_VFlip/SunflowersOnGround.png
+
+newmtl SunflowersOnGround_Cloud_128.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Textures_VFlip/Cloud_128.png

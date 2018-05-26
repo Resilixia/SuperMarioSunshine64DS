@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.3 BETA 2016-03-07-->
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Fiachra</author>
+			<authoring_tool>SM64DS Editor v2.3 BETA 2016-03-07</authoring_tool>
+		</contributor>
+		<created>2016-03-13T16:12:15</created>
+		<modified>2016-03-13T16:12:15</modified>
+		<unit name="meter" meter="1" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="killer_1-img" name="killer_1-img">
+			<init_from>killer_1.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="mat_killer_1-effect">
+			<profile_COMMON>
+				<newparam sid="killer_1-img-surface">
+					<surface type="2D">
+						<init_from>killer_1-img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="killer_1-img-sampler">
+					<sampler2D>
+						<source>killer_1-img-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1.0</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.5176471 0.5176471 0.5176471 1.0</color>
+						</ambient>
+						<diffuse>
+							<texture texture="killer_1-img-sampler" texcoord="UVMap" />
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1.0</color>
+						</specular>
+						<transparency>
+							<float sid="transparency">1</float>
+						</transparency>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<lights>1 0 0 0</lights>
+						<environment_mapping>0</environment_mapping>
+						<double_sided>0</double_sided>
+						<tex_tiling>flip flip</tex_tiling>
+						<tex_scale>1 1</tex_scale>
+						<tex_rotate>0</tex_rotate>
+						<tex_translate>0 0</tex_translate>
+						<fog_enable>0</fog_enable>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="mat_killer_1-material" name="mat_killer_1">
+			<instance_effect url="#mat_killer_1-effect" />
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="killer_face-mesh" name="killer_face-mesh">
+			<mesh>
+				<source id="killer_face-mesh-positions">
+					<float_array id="killer_face-mesh-positions-array" count="222">-15.13965 -7.602539 -3.495117 -17.74707 -9.152344 -5.245117 -16.03418 -7.336914 -6.987305 -17.37305 -3.626953 -7.041992 -16.25488 -2.398438 -3.973633 -18.89355 -3.555664 -2.880859 -14.58301 -2.694336 -2.486328 -16.36621 -6.09668 -1.203125 -18.05273 -8.338867 -2.605469 -19.50391 -5.949219 -4.487305 12.12109 -0.7832031 -5.666016 11.8584 -0.7832031 -7.069336 13.75 -2.676758 -7.566406 13.75 -2.942383 -9.047852 16.35645 -6.15332 -6.453125 14.94629 -2.133789 -9.371094 17.43262 -3.631836 -7.035156 15.88086 -1.283203 -8.211914 16.50781 -3.830078 -4.952148 14.94629 -2.133789 -6.977539 -11.8584 -0.7832031 -7.069336 -12.12109 -0.7832031 -5.666016 -13.75 -2.676758 -7.566406 -14.94629 -2.133789 -6.977539 -16.50781 -3.830078 -4.952148 -15.88086 -1.283203 -8.211914 -17.43262 -3.631836 -7.035156 -14.94629 -2.133789 -9.371094 -16.35645 -6.15332 -6.453125 -13.75 -2.942383 -9.047852 15.13965 -7.602539 -3.495117 16.03418 -7.336914 -6.987305 17.74707 -9.152344 -5.245117 17.37305 -3.626953 -7.041992 19.50391 -5.949219 -4.487305 18.89355 -3.555664 -2.880859 18.05273 -8.338867 -2.605469 16.36621 -6.09668 -1.203125 14.58301 -2.694336 -2.486328 12.34375 0.7861328 -5.927734 11.38281 1.624023 -6.830078 11.76758 0.953125 -7.810547 -12.34375 0.7861328 -5.927734 -11.38281 1.624023 -6.830078 -11.76758 0.953125 -7.810547 -16.03418 -7.336914 -6.987305 -16.25488 -2.398438 -3.973633 -15.13965 -7.602539 -3.495117 -14.58301 -2.694336 -2.486328 -3.40918 5.445313 15.19727 -8.597656 8.427734 1.912109 -9.703125 0 8.898438 -12.32031 -0.005859375 1.912109 -11.21484 -5.619141 -6.870117 -12.32031 0.1806641 -1.466797 -12.32031 0.1806641 -12.27344 -9.780273 5.979492 -6.870117 16.25488 -2.398438 -3.973633 16.03418 -7.336914 -6.987305 15.13965 -7.602539 -3.495117 16.25488 -2.398438 -3.973633 14.58301 -2.694336 -2.486328 3.40918 5.445313 15.19727 9.703125 0 8.898438 8.597656 8.427734 1.912109 12.32031 -0.005859375 1.912109 11.21484 -5.619141 -6.870117 12.32031 0.1806641 -12.27344 12.32031 0.1806641 -1.466797 9.780273 5.979492 -6.870117 -7.969727 -8.06543 -22.15137 -7.974609 7.966797 -22.15137 7.974609 7.966797 -22.15137 7.979492 -8.06543 -22.15137</float_array>
+					<technique_common>
+						<accessor source="#killer_face-mesh-positions-array" count="74" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="killer_face-mesh-normals">
+					<float_array id="killer_face-mesh-normals-array" count="222">0.8496094 -0.5234375 0.07617188 -0.3769531 -0.8183594 -0.4355469 0.7265625 -0.1992188 -0.6582031 -0.5273438 0.3710938 -0.7636719 0.5722656 0.7324219 -0.3691406 -0.6972656 0.5410156 0.4707031 0.5546875 0.5996094 0.578125 0.1367188 -0.1738281 0.9746094 -0.4511719 -0.6210938 0.640625 -0.9824219 -0.1132813 -0.1484375 -0.1132813 -0.6152344 0.78125 -0.7890625 -0.609375 -0.08984375 -0.6933594 -0.5371094 0.4824219 -0.6640625 -0.5214844 -0.5371094 -0.3769531 -0.8183594 -0.4355469 0.3164063 -0.005859375 -0.9492188 0.8535156 0.1699219 -0.4921875 0.6308594 0.7753906 0.005859375 -0.1796875 0.5273438 0.8300781 0.1601563 0.2285156 0.9609375 0.7890625 -0.609375 -0.08984375 0.1132813 -0.6152344 0.78125 0.6933594 -0.5371094 0.4824219 -0.1601563 0.2285156 0.9609375 0.1796875 0.5273438 0.8300781 -0.6308594 0.7753906 0.005859375 -0.8535156 0.1699219 -0.4921875 -0.3164063 -0.005859375 -0.9492188 0.3964844 -0.828125 -0.3984375 0.6640625 -0.5214844 -0.5371094 -0.8496094 -0.5234375 0.07617188 -0.7265625 -0.1992188 -0.6582031 0.3964844 -0.828125 -0.3984375 0.5273438 0.3710938 -0.7636719 0.9824219 -0.1132813 -0.1484375 0.6972656 0.5410156 0.4707031 0.4511719 -0.6210938 0.640625 -0.1367188 -0.1738281 0.9746094 -0.5546875 0.5996094 0.578125 0.6171875 0.4511719 0.6464844 0.5078125 0.8496094 -0.1328125 -0.1621094 0.4589844 -0.8730469 -0.6171875 0.4511719 0.6464844 -0.5078125 0.8496094 -0.1328125 0.1621094 0.4589844 -0.8730469 0.7265625 -0.1992188 -0.6582031 0.5722656 0.7324219 -0.3691406 0.8496094 -0.5234375 0.07617188 0.5546875 0.5996094 0.578125 -0.8320313 0.4140625 0.3671875 -0.8320313 0.4140625 0.3671875 -0.8320313 0.4140625 0.3671875 -0.8320313 0.4140625 0.3671875 -0.9824219 -0.1875 0 -0.9941406 0.1113281 0 -0.9941406 0.1113281 0 -0.9160156 0.4003906 0 -0.5722656 0.7324219 -0.3691406 -0.7265625 -0.1992188 -0.6582031 -0.8496094 -0.5234375 0.07617188 -0.5722656 0.7324219 -0.3691406 -0.5546875 0.5996094 0.578125 0.8320313 0.4140625 0.3671875 0.8320313 0.4140625 0.3671875 0.8320313 0.4140625 0.3671875 0.8320313 0.4140625 0.3671875 0.9824219 -0.1875 0 0.9941406 0.1113281 0 0.9941406 0.1113281 0 0.9160156 0.4003906 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+					<technique_common>
+						<accessor source="#killer_face-mesh-normals-array" count="74" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="killer_face-mesh-map-0">
+					<float_array id="killer_face-mesh-map-0-array" count="148">0.4101563 0.3232422 0.0078125 0.3916016 0.1621094 0.6699219 0.1601563 0.6982422 0.2890625 0.9970703 0.2802734 0.7626953 0.7333984 0.7490234 0.4140625 0.6191406 0.2050781 0.4667969 0.1171875 0.6494141 0.9990234 0.8789063 0.9990234 0.8789063 0.7578125 0.8789063 0.7578125 0.8789063 0.7578125 0.8789063 0.7578125 0.9433594 0.7578125 0.9990234 0.7578125 0.9990234 0.7578125 0.8789063 0.7578125 0.9433594 0.9990234 0.8789063 0.9990234 0.8789063 0.7578125 0.8789063 0.7578125 0.9433594 0.7578125 0.8789063 0.7578125 0.9990234 0.7578125 0.9990234 0.7578125 0.9433594 0.7578125 0.8789063 0.7578125 0.8789063 0.4101563 0.3232422 0.1621094 0.6699219 0.0078125 0.3916016 0.1601563 0.6982422 0.1171875 0.6494141 0.2802734 0.7626953 0.2050781 0.4667969 0.4140625 0.6191406 0.7333984 0.7490234 0.9990234 0.9433594 0.9990234 0.9990234 0.9990234 0.9433594 0.9990234 0.9433594 0.9990234 0.9990234 0.9990234 0.9433594 -0.09082031 0.6679688 0.2373047 0.8183594 0.05566406 0.4560547 0.3964844 0.6904297 1.005859 0.8066406 1.005859 -0.04296875 0.5029297 0.3681641 0.5019531 -0.04394531 0.02050781 -0.2353516 0.4765625 -0.2353516 0.02050781 0.2421875 0.4765625 0.2421875 0.2890625 0.9970703 -0.09082031 0.6679688 0.05566406 0.4560547 0.2373047 0.8183594 0.3964844 0.6904297 1.005859 0.8066406 0.5029297 0.3681641 1.005859 -0.04296875 0.5019531 -0.04394531 0.02050781 -0.2353516 0.02050781 0.2421875 0.4765625 -0.2353516 0.4765625 0.2421875 0.6308594 1.180664 0.6308594 0.8193359 0.9912109 0.8193359 0.9912109 1.180664</float_array>
+					<technique_common>
+						<accessor source="#killer_face-mesh-map-0-array" count="74" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="killer_face-mesh-colors">
+					<float_array id="killer_face-mesh-colors-array" count="222">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#killer_face-mesh-colors-array" count="74" stride="3">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="killer_face-mesh-vertices">
+					<input semantic="POSITION" source="#killer_face-mesh-positions" />
+				</vertices>
+				<polylist material="mat_killer_1-material" count="12">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>0 0 0 0 1 1 1 0 2 2 2 0 3 3 3 0 2 2 2 0 1 1 1 0 2 2 2 0 3 3 3 0 4 4 4 0 5 5 5 0 4 4 4 0 3 3 3 0 4 4 4 0 5 5 5 0 6 6 6 0 7 7 7 0 6 6 6 0 5 5 5 0 6 6 6 0 7 7 7 0 0 0 0 0 8 8 8 0 0 0 0 0 7 7 7 0 0 0 0 0 8 8 8 0 1 1 1 0 9 9 9 0 1 1 1 0 8 8 8 0 1 1 1 0 9 9 9 0 3 3 3 0 5 5 5 0 3 3 3 0 9 9 9 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="10">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>10 10 10 0 11 11 10 0 12 12 12 0 13 13 12 0 12 12 12 0 11 11 10 0 12 12 12 0 13 13 12 0 14 1 12 0 15 15 15 0 14 1 12 0 13 13 12 0 14 1 12 0 15 15 15 0 16 16 16 0 17 17 16 0 16 16 16 0 15 15 15 0 16 16 16 0 17 17 16 0 18 18 12 0 19 19 15 0 18 18 12 0 17 17 16 0 18 18 12 0 19 19 15 0 12 12 12 0 10 10 10 0 12 12 12 0 19 19 15 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="10">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>20 20 10 0 21 21 10 0 22 22 12 0 23 23 15 0 22 22 12 0 21 21 10 0 22 22 12 0 23 23 15 0 24 24 12 0 25 25 16 0 24 24 12 0 23 23 15 0 24 24 12 0 25 25 16 0 26 26 16 0 27 27 15 0 26 26 16 0 25 25 16 0 26 26 16 0 27 27 15 0 28 28 12 0 29 29 12 0 28 28 12 0 27 27 15 0 28 28 12 0 29 29 12 0 22 22 12 0 20 20 10 0 22 22 12 0 29 29 12 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="8">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3 3 3 3 3 3</vcount>
+					<p>30 30 0 0 31 31 2 0 32 28 1 0 33 33 3 0 32 28 1 0 31 31 2 0 32 28 1 0 33 33 3 0 34 34 9 0 35 35 5 0 34 34 9 0 33 33 3 0 34 34 9 0 35 35 5 0 36 36 8 0 37 37 7 0 36 36 8 0 35 35 5 0 36 36 8 0 37 37 7 0 30 30 0 0 38 38 6 0 30 30 0 0 37 37 7 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="4">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3 3</vcount>
+					<p>10 10 10 0 19 19 15 0 39 39 39 0 17 17 16 0 39 39 39 0 19 19 15 0 39 39 39 0 17 17 16 0 40 40 40 0 41 41 39 0 40 40 40 0 17 17 16 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="4">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3 3</vcount>
+					<p>42 42 39 0 43 43 40 0 25 25 16 0 44 44 39 0 25 25 16 0 43 43 40 0 25 25 16 0 44 44 39 0 27 27 15 0 29 29 12 0 27 27 15 0 44 44 39 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="3">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3</vcount>
+					<p>17 17 16 0 15 15 15 0 41 41 39 0 13 13 12 0 41 41 39 0 15 15 15 0 41 41 39 0 13 13 12 0 11 11 10 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>30 30 0 0 32 28 1 0 36 36 8 0 34 34 9 0 36 36 8 0 32 28 1 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>2 2 45 0 4 4 46 0 0 0 47 0 6 6 48 0 0 0 47 0 4 4 46 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>49 49 49 0 50 49 50 0 51 49 51 0 52 49 52 0 51 49 51 0 50 49 50 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>7 7 7 0 5 5 5 0 8 8 8 0 9 9 9 0 8 8 8 0 5 5 5 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>53 53 53 0 54 54 54 0 55 54 55 0 56 56 56 0 55 54 55 0 54 54 54 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>37 37 7 0 35 35 5 0 38 38 6 0 57 57 4 0 38 38 6 0 35 35 5 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>35 35 5 0 33 33 3 0 57 57 4 0 31 31 2 0 57 57 4 0 33 33 3 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>31 31 45 0 30 30 47 0 57 57 46 0 38 38 48 0 57 57 46 0 30 30 47 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>21 21 10 0 42 42 39 0 23 23 15 0 25 25 16 0 23 23 15 0 42 42 39 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>62 62 49 0 63 62 51 0 64 62 50 0 65 62 52 0 64 62 50 0 63 62 51 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="2">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3</vcount>
+					<p>66 66 53 0 67 67 55 0 68 67 54 0 69 69 56 0 68 67 54 0 67 67 55 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="1">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>4</vcount>
+					<p>70 70 70 0 71 70 71 0 72 70 72 0 73 70 73 0</p>
+				</polylist>
+				<polylist material="mat_killer_1-material" count="3">
+					<input semantic="VERTEX" source="#killer_face-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#killer_face-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#killer_face-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#killer_face-mesh-colors" offset="3" />
+					<vcount>3 3 3</vcount>
+					<p>14 1 12 0 18 18 12 0 12 12 12 0 28 28 12 0 22 22 12 0 24 24 12 0 44 44 39 0 20 20 10 0 29 29 12 0</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="killer_face-skin" name="skinCluster_killer_face">
+			<skin source="#killer_face-mesh">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="killer_face-skin-joints">
+					<IDREF_array id="killer_face-skin-joints-array" count="1">killer_face</IDREF_array>
+					<technique_common>
+						<accessor source="#killer_face-skin-joints-array" count="1" stride="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<!--The inverse bind pose for a joint is given by the inverse bind pose of the parent joint (where present) multiplied by the inverse of the current joint's transformation matrix.-->
+				<source id="killer_face-skin-bind_poses">
+					<float_array id="killer_face-skin-bind_poses-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#killer_face-skin-bind_poses-array" count="1" stride="16">
+							<param name="TRANSFORM" type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="killer_face-skin-weights">
+					<!--The BMD format does not have any concept of 'weights', instead each vertex is assigned to one bone-->
+					<float_array id="killer_face-skin-weights-array" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#killer_face-skin-weights-array" count="1" stride="1">
+							<param name="WEIGHT" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#killer_face-skin-joints" />
+					<input semantic="INV_BIND_MATRIX" source="#killer_face-skin-bind_poses" />
+				</joints>
+				<!--Each vertex will be assigned to only one bone with a weight of 1-->
+				<vertex_weights count="74">
+					<input semantic="JOINT" source="#killer_face-skin-joints" offset="0" />
+					<input semantic="WEIGHT" source="#killer_face-skin-weights" offset="1" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<!--This list contains two values for each vertex, the first is the bone ID and the second is the index of the vertex weight '1' (0)-->
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<!--This lists each of the 'bones' in the BMD model, listing each bone's individual Scale, Rotation, Translation transformation in the reverse of the order in which they should be multiplied to form an SRT  matrix. This will then be multiplied recursively by the parents' transformations to get the final transformation for this joint.-->
+			<node id="killer_face" name="killer_face" sid="killer_face" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+			</node>
+			<node id="killer_face-node" name="killer_face-node" type="NODE">
+				<instance_controller url="#killer_face-skin">
+					<skeleton>#killer_face</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="mat_killer_1-material" target="#mat_killer_1-material">
+								<bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene" />
+	</scene>
+</COLLADA>

@@ -1,0 +1,4 @@
+- Copy <library_effects>.<effect id="mat_killer_1-effect">.<profile_COMMON>.<extra>.<technique profile="SM64DSe"> from "killer_face.dae" 
+into <library_effects>.<effect id="mat_killer_1-effect">.<profile_COMMON>.<extra> within "Killer_Merged.dae"
+- Copy <library_effects>.<effect id="mat_killer_2-effect">.<profile_COMMON>.<extra>.<technique profile="SM64DSe"> from "killer_body.dae" 
+into <library_effects>.<effect id="mat_killer_2-effect">.<profile_COMMON>.<extra> within "Killer_Merged.dae"

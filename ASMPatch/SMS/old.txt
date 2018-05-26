@@ -1,0 +1,400 @@
+// DOESN'T WORK BECAUSE YOU'D NEED TO ALSO RE-ARRANGE ALL VARIABLES, METHODS AND RELATIVE STATEMENTS 
+
+/*
+*   This file is part of NSMB Editor 5.
+*
+*   NSMB Editor 5 is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   NSMB Editor 5 is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with NSMB Editor 5.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Text.RegularExpressions;
+
+namespace NSMBe4.Patcher
+{
+    public class PatchMaker
+    {
+        private int ArenaLoOffs;
+        Arm9BinaryHandler handler;
+        DirectoryInfo romdir;
+
+        public PatchMaker(DirectoryInfo romdir)
+        {
+            handler = new Arm9BinaryHandler();
+            this.romdir = romdir;
+        }
+
+		public uint getCodeAddr()
+		{
+            handler.load();
+            loadArenaLoOffsFile(romdir);
+            uint codeAddr = handler.readFromRamAddr(ArenaLoOffs, -1);
+            return codeAddr;
+		}
+		
+		public void restore()
+		{
+            handler.restoreFromBackup();
+		}
+		
+        public void compilePatch()
+        {
+            uint codeAddr = getCodeAddr();
+            PatchCompiler.compilePatch(codeAddr, romdir);
+        }
+
+        public void generatePatch()
+        {
+        	int codeAddr = (int) getCodeAddr();
+            Console.Out.WriteLine(String.Format("New code address: {0:X8}", codeAddr));
+
+            FileInfo f = new FileInfo(romdir.FullName + "/newcode.bin");
+            if (!f.Exists) return;
+            FileStream fs = f.OpenRead();
+
+            byte[] newdata = new byte[fs.Length];
+            fs.Read(newdata, 0, (int)fs.Length);
+            fs.Close();
+
+            ByteArrayOutputStream extradata = new ByteArrayOutputStream();
+
+            extradata.write(newdata);
+            extradata.align(4);
+            int hookAddr = codeAddr + extradata.getPos();
+
+            f = new FileInfo(romdir.FullName + "/newcode.sym");
+            StreamReader s = f.OpenText();
+
+            List<HookDescriptor> hooks = new List<HookDescriptor>();
+            while (!s.EndOfStream)
+            {
+                string l = s.ReadLine();
+                if (HookDescriptor.HOOK_TYPE.IsMatch(l))
+                {
+                    hooks.Add(new HookDescriptor(l));
+                }
+            }
+            s.Close();
+            hooks.Sort();
+
+            for (int i = 0; i < hooks.Count; i++)
+            {
+                if (hooks[i].hookType == HookType.OVRW || hooks[i].hookType == HookType.NOOP)
+                {
+                    int binOffset = (hooks[i].destRamAddr - codeAddr);
+                    for (int j = 0; j < hooks[i].length; j += 4)
+                    {
+                        uint instr = (hooks[i].hookType == HookType.OVRW) ? extradata.readUInt(binOffset) : 0xE1A00000;
+                        extradata.removeInt(binOffset);
+                        handler.writeToRamAddr((hooks[i].ramAddr + j), instr, hooks[i].overlay);
+                    }
+                    for (int j = i + 1; j < hooks.Count; j++)
+                    {
+                        hooks[j].shiftDestRamAddr(0 - hooks[i].length);
+                    }
+                    Console.Out.WriteLine(String.Format("\t\t{0:X8} {1:X8} {2:X8}", hooks[i].destRamAddr, 0, hooks[i].length));
+                }
+                else
+                {
+                    int thisHookAddr = 0;
+                    uint val = 0;
+                    if (hooks[i].hookType == HookType.NSUB)
+                    {
+                        val = makeBranchOpcode(hooks[i].ramAddr, hooks[i].destRamAddr, false);
+                    }
+                    else if (hooks[i].hookType == HookType.REPL)
+                    {
+                        val = makeBranchOpcode(hooks[i].ramAddr, hooks[i].destRamAddr, true);
+                    }
+                    else if (hooks[i].hookType == HookType.HOOK)
+                    {
+                        //Jump to the hook addr
+                        thisHookAddr = hookAddr;
+                        val = makeBranchOpcode(hooks[i].ramAddr, hookAddr, false);
+
+                        uint originalOpcode = handler.readFromRamAddr(hooks[i].ramAddr, hooks[i].overlay);
+
+                        //TODO: Parse and fix original opcode in case of BL instructions
+                        //so it's possible to hook over them too.
+                        extradata.writeUInt(originalOpcode);
+                        hookAddr += 4;
+                        extradata.writeUInt(0xE92D5FFF); //push {r0-r12, r14}
+                        hookAddr += 4;
+                        extradata.writeUInt(makeBranchOpcode(hookAddr, hooks[i].destRamAddr, true));
+                        hookAddr += 4;
+                        extradata.writeUInt(0xE8BD5FFF); //pop {r0-r12, r14}
+                        hookAddr += 4;
+                        extradata.writeUInt(makeBranchOpcode(hookAddr, hooks[i].ramAddr + 4, false));
+                        hookAddr += 4;
+                        extradata.writeUInt(0x12345678);
+                        hookAddr += 4;
+                    }
+
+                    Console.Out.WriteLine(String.Format("\t\t{0:X8} {1:X8}", hooks[i].destRamAddr, thisHookAddr));
+
+                    handler.writeToRamAddr(hooks[i].ramAddr, val, hooks[i].overlay);
+                }
+            }
+
+            int newArenaOffs = codeAddr + extradata.getPos();
+            handler.writeToRamAddr(ArenaLoOffs, (uint)newArenaOffs, -1);
+
+            handler.sections.Add(new Arm9BinSection(extradata.getArray(), codeAddr, 0));
+            handler.saveSections();
+        }
+
+        private void loadArenaLoOffsFile(DirectoryInfo romdir)
+        {
+            FileInfo f = new FileInfo(romdir.FullName + "/arenaoffs.txt");
+            StreamReader s = f.OpenText();
+            string l = s.ReadLine();
+            ArenaLoOffs = int.Parse(l, System.Globalization.NumberStyles.HexNumber);
+            s.Close();
+        }
+
+
+        public static uint makeBranchOpcode(int srcAddr, int destAddr, bool withLink)
+        {
+            unchecked
+            {
+                uint res = (uint)0xEA000000;
+
+                if (withLink)
+                    res |= 0x01000000;
+
+                int offs = (destAddr / 4) - (srcAddr / 4) - 2;
+                offs &= 0x00FFFFFF;
+                res |= (uint)offs;
+
+                return res;
+            }
+        }
+
+
+        public static uint parseUHex(string s)
+        {
+            return uint.Parse(s, System.Globalization.NumberStyles.HexNumber);
+        }
+
+        public static int parseHex(string s)
+        {
+            return int.Parse(s, System.Globalization.NumberStyles.HexNumber);
+        }
+
+        public struct HookDescriptor : IComparable<HookDescriptor>
+        {
+            public static Regex HOOK_DEST_RAM_ADDR_AND_LENGTH = new Regex("^(?<destRamAddr>[0-9A-Za-z]{8})[A-Za-z\\.\\*\\s]+(?<length>[0-9A-Za-z]{8})\\s(?<name>[^$]+)$");
+            public static Regex HOOK_TYPE;
+
+            public int destRamAddr;
+            public int ramAddr;
+            public int overlay;
+            public int length;
+            public string name;
+            public string completeLine;
+            public HookType hookType;
+
+            static HookDescriptor()
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (string hookType in Enum.GetNames(typeof(HookType)))
+                {
+                    sb.Append(hookType.ToLower()).Append("_|");
+                }
+                sb.Remove(sb.Length - 1, 1);
+                HOOK_TYPE = new Regex(sb.ToString());
+            }
+
+            public HookDescriptor(string line)
+            {
+                GroupCollection addrAndLengthGroups = HOOK_DEST_RAM_ADDR_AND_LENGTH.Match(line).Groups;
+                destRamAddr = parseHex(addrAndLengthGroups["destRamAddr"].Value);
+                Match hookTypeMatch = HOOK_TYPE.Match(line);
+                ramAddr = parseHex(line.Substring(hookTypeMatch.Index + 5, 8));
+                overlay = (line.IndexOf("_ov_") > -1) ? parseHex(line.Substring(line.IndexOf("_ov_") + 4, 2)) : -1;
+                length = parseHex(addrAndLengthGroups["length"].Value);
+                name = addrAndLengthGroups["name"].Value;
+                completeLine = line;
+                hookType = (HookType)Enum.Parse(typeof(HookType), line.Substring(hookTypeMatch.Index, 4), true);
+            }
+
+            public void shiftDestRamAddr(int n)
+            {
+                destRamAddr -= n;
+            }
+
+            public int CompareTo(HookDescriptor other)
+            {
+                if (destRamAddr < other.destRamAddr) return -1;
+                else if (destRamAddr > other.destRamAddr) return 1;
+                else return 0;
+            }
+        }
+
+        public enum HookType
+        {
+            NSUB,
+            HOOK,
+            REPL,
+            OVRW,
+            NOOP
+        }
+    }
+}
+
+/*
+*   This file is part of NSMB Editor 5.
+*
+*   NSMB Editor 5 is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   NSMB Editor 5 is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with NSMB Editor 5.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace NSMBe4
+{
+	public class ByteArrayOutputStream
+	{
+        //implements an unbonded array to store unlimited data.
+        //writes in amortized constant time.
+
+        private byte[] buf = new byte[16];
+        private int pos = 0;
+
+        public ByteArrayOutputStream()
+        {
+        }
+
+        public int getPos()
+        {
+            return pos;
+        }
+
+        public byte[] getArray()
+        {
+            byte[] ret = new byte[pos];
+            Array.Copy(buf, ret, pos);
+            return ret;
+        }
+
+        public void writeByte(byte b)
+        {
+            if (buf.Length <= pos)
+                grow();
+
+            buf[pos] = b;
+            pos++;
+        }
+
+        public void writeUShort(ushort u)
+        {
+            writeByte((byte)u);
+            writeByte((byte)(u >> 8));
+        }
+        public void writeUInt(uint u)
+        {
+            writeByte((byte)u);
+            writeByte((byte)(u >> 8));
+            writeByte((byte)(u >> 16));
+            writeByte((byte)(u >> 24));
+        }
+
+        public void writeInt(int i)
+        {
+            writeUInt((uint)i);
+
+        }
+        public void writeLong(long u)
+        {
+            writeByte((byte)u);
+            writeByte((byte)(u >> 8));
+            writeByte((byte)(u >> 16));
+            writeByte((byte)(u >> 24));
+            writeByte((byte)(u >> 32));
+            writeByte((byte)(u >> 40));
+            writeByte((byte)(u >> 48));
+            writeByte((byte)(u >> 56));
+        }
+
+        public void remove(int position, int n)
+        {
+            for (int i = position; i < buf.Length - n; i++)
+            {
+                buf[i] = buf[i + n];
+            }
+            Array.Resize(ref buf, buf.Length - n);
+            pos -= n;
+        }
+
+        public void removeByte(int position) { remove(position, 1); }
+
+        public void removeShort(int position) { remove(position, 2); }
+
+        public void removeInt(int position) { remove(position, 4); }
+
+        public void removeLong(int position) { remove(position, 8); }
+
+        public byte[] read(int position, int n)
+        {
+            byte[] ret = new byte[n];
+            Array.Copy(buf, position, ret, 0, n);
+            return ret;
+        }
+
+        public uint readUInt(int position)
+        {
+            byte[] ret = read(position, 4);
+            uint result = 0x00000000;
+            result |= (uint)(ret[0] << 0);
+            result |= (uint)(ret[1] << 8);
+            result |= (uint)(ret[2] << 16);
+            result |= (uint)(ret[3] << 24);
+            return result;
+        }
+
+        public void align(int m)
+        {
+            while (pos % m != 0)
+                writeByte(0);
+        }
+
+        private void grow()
+        {
+            byte[] nbuf = new byte[buf.Length * 2];
+            Array.Copy(buf, nbuf, buf.Length);
+            buf = nbuf;
+        }
+
+        public void write(byte[] ar)
+        {
+            for (int i = 0; i < ar.Length; i++)
+                writeByte(ar[i]);
+        }
+    }
+}
+

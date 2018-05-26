@@ -15,7 +15,7 @@ This is an incomplete port of many Super Mario Sunshine elements into Super Mari
 2. Click on "More" in the top toolbar and select "Toggle Suitability for NSMBe ASM Patching". You should then see a confirmation message "ROM is now suitable for use with NSMBe's ASM patch insertion feature".
 3. Navigate to "SMS/CustomObjects/F.L.U.D.D._PowerUp/" and follow the instructions to import the new character models found in "Instructions.Mario.txt", "Instructions.Luigi.txt" and "Instructions.Wario.txt".
 4. Navigate to "SMS/CustomObjects/F.L.U.D.D._PowerUp/NozzleIcon" and follow the instructions to import the HUD icons found in "Instructions.NozzleIcon.txt".
-5. Within a terminal navigate to "ASMPatch". Run "make" and ensure that you are able to compile the code successfully. If compilation fails ensure that you have correctly followed the steps to set up the ASM Hacking Template and its required tools.
+5. Within a terminal navigate to "ASMPatch/F.L.U.D.D.Only". Run "make" and ensure that you are able to compile the code successfully. If compilation fails ensure that you have correctly followed the steps to set up the ASM Hacking Template and its required tools.
 6. Make a copy of your updated ROM.
 7. Open the copy your updated ROM in NSMBe and select the "Tools/Options" tab.
 8. Under the "ASM Tools" header click on "Run 'make clean'" followed by "Run 'make' and insert". Once finished you may close NSMBe.

@@ -1,0 +1,10 @@
+<extra>
+	<technique profile="SM64DSe">
+		<lights>1 0 0 0</lights>
+		<environment_mapping>1</environment_mapping>
+		<tex_tiling>repeat repeat</tex_tiling>
+		<tex_scale>0.1 0.1</tex_scale>
+		<tex_rotation>0</tex_rotation>
+		<tex_translation>32 32</tex_translation>
+	</technique>
+</extra>

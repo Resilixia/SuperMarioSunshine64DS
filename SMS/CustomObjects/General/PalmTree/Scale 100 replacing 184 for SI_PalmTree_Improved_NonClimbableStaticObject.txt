@@ -1,0 +1,1 @@
+Scale 70 replacing 184 for SI_PalmTree_Improved_NonClimbableStaticObject

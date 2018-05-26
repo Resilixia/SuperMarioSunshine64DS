@@ -1,0 +1,6 @@
+When texturing the mirror part, don't select and unwarp all of the 
+faces at once otherwise the environment mapping does not work correctly, 
+last time selecting and unwrapping the left half and then the right 
+half worked.
+
+Scale BMD 80 KCL 0.64

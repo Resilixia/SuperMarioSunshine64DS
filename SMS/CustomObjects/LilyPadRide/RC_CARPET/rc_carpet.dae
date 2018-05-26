@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.2 PRIVATE BETA 20140907-->
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Fiachra</author>
+			<authoring_tool>SM64DS Editor v2.2 PRIVATE BETA 20140907</authoring_tool>
+		</contributor>
+		<created>2014-09-09T13:25:26</created>
+		<modified>2014-09-09T13:25:26</modified>
+		<unit name="meter" meter="1" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="carpet-img" name="carpet-img">
+			<init_from>carpet.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="mat_carpet-effect">
+			<profile_COMMON>
+				<newparam sid="carpet-img-surface">
+					<surface type="2D">
+						<init_from>carpet-img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="carpet-img-sampler">
+					<sampler2D>
+						<source>carpet-img-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1.0</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.5176471 0.5176471 0.5176471 1.0</color>
+						</ambient>
+						<diffuse>
+							<texture texture="carpet-img-sampler" texcoord="UVMap" />
+						</diffuse>
+						<specular>
+							<color sid="specular">0 0 0 1.0</color>
+						</specular>
+						<transparency>
+							<float sid="transparency">1</float>
+						</transparency>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="GOOGLEEARTH">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+			<extra>
+				<technique profile="MAX3D">
+					<double_sided>1</double_sided>
+				</technique>
+			</extra>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="mat_carpet-material" name="mat_carpet">
+			<instance_effect url="#mat_carpet-effect" />
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="all_root-mesh" name="all_root-mesh">
+			<mesh>
+				<source id="all_root-mesh-positions">
+					<float_array id="all_root-mesh-positions-array" count="39">-31.16797 0 46.92969 0.08203125 0 46.875 -15.58398 0 23.46484 0 0 0 -31.25 0 0.0546875 -15.66602 0 -23.41016 -31.33203 0 -46.82031 -0.08203125 0 -46.875 15.58398 0 -23.46484 31.16797 0 -46.92969 31.25 0 -0.0546875 15.66602 0 23.41016 31.33203 0 46.82031</float_array>
+					<technique_common>
+						<accessor source="#all_root-mesh-positions-array" count="13" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="all_root-mesh-normals">
+					<float_array id="all_root-mesh-normals-array" count="39">0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0 0 63.875 0</float_array>
+					<technique_common>
+						<accessor source="#all_root-mesh-normals-array" count="13" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="all_root-mesh-map-0">
+					<float_array id="all_root-mesh-map-0-array" count="26">0.015625 1.984375 1 1.984375 0.5078125 1.492188 1 1 0.015625 1 0.5078125 0.5078125 0.015625 0.015625 1 0.015625 1.492188 0.5078125 1.984375 0.015625 1.984375 1 1.492188 1.492188 1.984375 1.984375</float_array>
+					<technique_common>
+						<accessor source="#all_root-mesh-map-0-array" count="13" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="all_root-mesh-colors">
+					<float_array id="all_root-mesh-colors-array" count="39">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#all_root-mesh-colors-array" count="13" stride="3">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="all_root-mesh-vertices">
+					<input semantic="POSITION" source="#all_root-mesh-positions" />
+				</vertices>
+				<polylist material="mat_carpet-material" count="16">
+					<input semantic="VERTEX" source="#all_root-mesh-vertices" offset="0" />
+					<input semantic="NORMAL" source="#all_root-mesh-normals" offset="1" />
+					<input semantic="TEXCOORD" source="#all_root-mesh-map-0" offset="2" set="0" />
+					<input semantic="COLOR" source="#all_root-mesh-colors" offset="3" />
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>0 0 0 0 1 0 1 0 2 0 2 0 3 0 3 0 2 0 2 0 1 0 1 0 2 0 2 0 3 0 3 0 4 0 4 0 5 0 5 0 4 0 4 0 3 0 3 0 4 0 4 0 5 0 5 0 6 0 6 0 7 0 7 0 6 0 6 0 5 0 5 0 5 0 5 0 3 0 3 0 7 0 7 0 8 0 8 0 7 0 7 0 3 0 3 0 7 0 7 0 8 0 8 0 9 0 9 0 10 0 10 0 9 0 9 0 8 0 8 0 8 0 8 0 3 0 3 0 10 0 10 0 11 0 11 0 10 0 10 0 3 0 3 0 10 0 10 0 11 0 11 0 12 0 12 0 1 0 1 0 12 0 12 0 11 0 11 0 3 0 3 0 1 0 1 0 11 0 11 0 4 0 4 0 0 0 0 0 2 0 2 0</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="all_root-skin" name="skinCluster_all_root">
+			<skin source="#all_root-mesh">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="all_root-skin-joints">
+					<Name_array id="all_root-skin-joints-array" count="6">all_root joint1 joint2 joint3 joint4 joint5</Name_array>
+					<technique_common>
+						<accessor source="#all_root-skin-joints-array" count="6" stride="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<!--The inverse bind pose for a joint is given by the inverse bind pose of the parent joint (where present) multiplied by the inverse of the current joint's transformation matrix.-->
+				<source id="all_root-skin-bind_poses">
+					<float_array id="all_root-skin-bind_poses-array" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 31.25 0 1 0 0 0 0 1 46.875 0 0 0 1 1 0 0 15.625 0 1 0 0 0 0 1 23.4375 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 -15.625 0 1 0 0 0 0 1 -23.4375 0 0 0 1 1 0 0 -31.25 0 1 0 0 0 0 1 -46.875 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#all_root-skin-bind_poses-array" count="6" stride="16">
+							<param name="TRANSFORM" type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="all_root-skin-weights">
+					<!--The BMD format does not have any concept of 'weights', instead each vertex is assigned to one bone-->
+					<float_array id="all_root-skin-weights-array" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#all_root-skin-weights-array" count="1" stride="1">
+							<param name="WEIGHT" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#all_root-skin-joints" />
+					<input semantic="INV_BIND_MATRIX" source="#all_root-skin-bind_poses" />
+				</joints>
+				<!--Each vertex will be assigned to only one bone with a weight of 1-->
+				<vertex_weights count="13">
+					<input semantic="JOINT" source="#all_root-skin-joints" offset="0" />
+					<input semantic="WEIGHT" source="#all_root-skin-weights" offset="1" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<!--This list contains two values for each vertex, the first is the bone ID and the second is the index of the vertex weight '1' (0)-->
+					<v>3 0 4 0 3 0 3 0 2 0 2 0 1 0 2 0 3 0 3 0 4 0 4 0 5 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<!--This lists each of the 'bones' in the BMD model, listing each bone's individual Scale, Rotation, Translation transformation in the reverse of the order in which they should be multiplied to form an SRT  matrix. This will then be multiplied recursively by the parents' transformations to get the final transformation for this joint.-->
+			<node id="all_root" name="all_root" sid="all_root" type="JOINT">
+				<translate sid="translate">0 0 0</translate>
+				<rotate sid="rotationZ">0 0 1 0</rotate>
+				<rotate sid="rotationY">0 1 0 0</rotate>
+				<rotate sid="rotationX">1 0 0 0</rotate>
+				<scale sid="scale">1 1 1</scale>
+				<node id="joint1" name="joint1" sid="joint1" type="JOINT">
+					<translate sid="translate">-31.25 0 -46.875</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+				</node>
+				<node id="joint2" name="joint2" sid="joint2" type="JOINT">
+					<translate sid="translate">-15.625 0 -23.4375</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+				</node>
+				<node id="joint3" name="joint3" sid="joint3" type="JOINT">
+					<translate sid="translate">0 0 0</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+				</node>
+				<node id="joint4" name="joint4" sid="joint4" type="JOINT">
+					<translate sid="translate">15.625 0 23.4375</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+				</node>
+				<node id="joint5" name="joint5" sid="joint5" type="JOINT">
+					<translate sid="translate">31.25 0 46.875</translate>
+					<rotate sid="rotationZ">0 0 1 0</rotate>
+					<rotate sid="rotationY">0 1 0 0</rotate>
+					<rotate sid="rotationX">1 0 0 0</rotate>
+					<scale sid="scale">1 1 1</scale>
+				</node>
+			</node>
+			<node id="all_root-node" name="all_root-node" type="NODE">
+				<instance_controller url="#all_root-skin">
+					<skeleton>#all_root</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="mat_carpet-material" target="#mat_carpet-material">
+								<bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene" />
+	</scene>
+</COLLADA>

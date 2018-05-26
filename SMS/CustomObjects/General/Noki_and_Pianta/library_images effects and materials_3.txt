@@ -1,0 +1,1150 @@
+<library_images>
+		<image id="Eye_Skin_All" name="Eye_Skin_All">
+			<init_from>Textures_VFlip/Noki/Eye_Skin_All.png</init_from>
+		</image>
+		<image id="ShellInterior_All" name="ShellInterior_All">
+			<init_from>Textures_VFlip/Noki/ShellInterior_All.png</init_from>
+		</image>
+		<image id="Hair_M_Green" name="Hair_M_Green">
+			<init_from>Textures_VFlip/Noki/Hair_M_Green.png</init_from>
+		</image>
+		<image id="Hair_M_Blue" name="Hair_M_Blue">
+			<init_from>Textures_VFlip/Noki/Hair_M_Blue.png</init_from>
+		</image>
+		<image id="Hair_M_Red" name="Hair_M_Red">
+			<init_from>Textures_VFlip/Noki/Hair_M_Red.png</init_from>
+		</image>
+		<image id="Hair_F_Purple" name="Hair_F_Purple">
+			<init_from>Textures_VFlip/Noki/Hair_F_Purple.png</init_from>
+		</image>
+		<image id="Hair_F_Pink" name="Hair_F_Pink">
+			<init_from>Textures_VFlip/Noki/Hair_F_Pink.png</init_from>
+		</image>
+		<image id="Hair_F_Orange" name="Hair_F_Orange">
+			<init_from>Textures_VFlip/Noki/Hair_F_Orange.png</init_from>
+		</image>
+		<image id="Shell_M_Green" name="Shell_M_Green">
+			<init_from>Textures_VFlip/Noki/Shell_M_Green.png</init_from>
+		</image>
+		<image id="Shell_M_Blue" name="Shell_M_Blue">
+			<init_from>Textures_VFlip/Noki/Shell_M_Blue.png</init_from>
+		</image>
+		<image id="Shell_M_Red" name="Shell_M_Red">
+			<init_from>Textures_VFlip/Noki/Shell_M_Red.png</init_from>
+		</image>
+		<image id="Shell_F_Purple" name="Shell_F_Purple">
+			<init_from>Textures_VFlip/Noki/Shell_F_Purple.png</init_from>
+		</image>
+		<image id="Shell_F_Pink" name="Shell_F_Pink">
+			<init_from>Textures_VFlip/Noki/Shell_F_Pink.png</init_from>
+		</image>
+		<image id="Shell_F_Orange" name="Shell_F_Orange">
+			<init_from>Textures_VFlip/Noki/Shell_F_Orange.png</init_from>
+		</image>
+		<!-- PIANTA -->
+		<image id="Eyes" name="Eyes">
+			<init_from>Textures_VFlip/Pianta/Eyes.png</init_from>
+		</image>
+		<image id="Skin_Green" name="Skin_Green">
+			<init_from>Textures_VFlip/Pianta/Skin_Green.png</init_from>
+		</image>
+		<image id="Skin_Blue" name="Skin_Blue">
+			<init_from>Textures_VFlip/Pianta/Skin_Blue.png</init_from>
+		</image>
+		<image id="Skin_Orange" name="Skin_Orange">
+			<init_from>Textures_VFlip/Pianta/Skin_Orange.png</init_from>
+		</image>
+		<image id="Skin_Pink" name="Skin_Pink">
+			<init_from>Textures_VFlip/Pianta/Skin_Pink.png</init_from>
+		</image>
+		<image id="Skin_Yellow" name="Skin_Yellow">
+			<init_from>Textures_VFlip/Pianta/Skin_Yellow.png</init_from>
+		</image>
+		<image id="Leaves_M" name="Leaves_M">
+			<init_from>Textures_VFlip/Pianta/Leaves_M.png</init_from>
+		</image>
+		<image id="Leaves_F" name="Leaves_F">
+			<init_from>Textures_VFlip/Pianta/Leaves_F.png</init_from>
+		</image>
+		<image id="Bra_F_Empty" name="Bra_F_Empty">
+			<init_from>Textures_VFlip/Pianta/Bra_F_Empty.png</init_from>
+		</image>
+		<image id="Bra_F_Rua" name="Bra_F_Rua">
+			<init_from>Textures_VFlip/Pianta/Bra_F_Rua.png</init_from>
+		</image>
+		<image id="Flower_16_png" name="Flower_16_png">
+			<init_from>Textures_VFlip/Pianta/Flower_16.png</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="skin-effect">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">1 1 1 1</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">1 1 1 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">1</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Eye_Skin-effect">
+			<profile_COMMON>
+				<newparam sid="Eye_Skin_All-surface">
+					<surface type="2D">
+						<init_from>Eye_Skin_All</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Eye_Skin_All-sampler">
+					<sampler2D>
+						<source>Eye_Skin_All-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Eye_Skin_All-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="ShellInterior-effect">
+			<profile_COMMON>
+				<newparam sid="ShellInterior_All-surface">
+					<surface type="2D">
+						<init_from>ShellInterior_All</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="ShellInterior_All-sampler">
+					<sampler2D>
+						<source>ShellInterior_All-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="ShellInterior_All-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Hair-effect">
+			<profile_COMMON>
+				<newparam sid="Hair_M_Green-surface">
+					<surface type="2D">
+						<init_from>Hair_M_Green</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Hair_M_Green-sampler">
+					<sampler2D>
+						<source>Hair_M_Green-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Hair_M_Green-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Hair_M_Blue-effect">
+			<profile_COMMON>
+				<newparam sid="Hair_M_Blue-surface">
+					<surface type="2D">
+						<init_from>Hair_M_Blue</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Hair_M_Blue-sampler">
+					<sampler2D>
+						<source>Hair_M_Blue-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Hair_M_Blue-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Hair_M_Red-effect">
+			<profile_COMMON>
+				<newparam sid="Hair_M_Red-surface">
+					<surface type="2D">
+						<init_from>Hair_M_Red</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Hair_M_Red-sampler">
+					<sampler2D>
+						<source>Hair_M_Red-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Hair_M_Red-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Hair_F_Purple-effect">
+			<profile_COMMON>
+				<newparam sid="Hair_F_Purple-surface">
+					<surface type="2D">
+						<init_from>Hair_F_Purple</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Hair_F_Purple-sampler">
+					<sampler2D>
+						<source>Hair_F_Purple-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Hair_F_Purple-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Hair_F_Pink-effect">
+			<profile_COMMON>
+				<newparam sid="Hair_F_Pink-surface">
+					<surface type="2D">
+						<init_from>Hair_F_Pink</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Hair_F_Pink-sampler">
+					<sampler2D>
+						<source>Hair_F_Pink-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Hair_F_Pink-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Hair_F_Orange-effect">
+			<profile_COMMON>
+				<newparam sid="Hair_F_Orange-surface">
+					<surface type="2D">
+						<init_from>Hair_F_Orange</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Hair_F_Orange-sampler">
+					<sampler2D>
+						<source>Hair_F_Orange-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Hair_F_Orange-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Shell-effect">
+			<profile_COMMON>
+				<newparam sid="Shell_M_Green-surface">
+					<surface type="2D">
+						<init_from>Shell_M_Green</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Shell_M_Green-sampler">
+					<sampler2D>
+						<source>Shell_M_Green-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Shell_M_Green-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Shell_M_Blue-effect">
+			<profile_COMMON>
+				<newparam sid="Shell_M_Blue-surface">
+					<surface type="2D">
+						<init_from>Shell_M_Blue</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Shell_M_Blue-sampler">
+					<sampler2D>
+						<source>Shell_M_Blue-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Shell_M_Blue-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Shell_M_Red-effect">
+			<profile_COMMON>
+				<newparam sid="Shell_M_Red-surface">
+					<surface type="2D">
+						<init_from>Shell_M_Red</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Shell_M_Red-sampler">
+					<sampler2D>
+						<source>Shell_M_Red-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Shell_M_Red-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Shell_F_Purple-effect">
+			<profile_COMMON>
+				<newparam sid="Shell_F_Purple-surface">
+					<surface type="2D">
+						<init_from>Shell_F_Purple</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Shell_F_Purple-sampler">
+					<sampler2D>
+						<source>Shell_F_Purple-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Shell_F_Purple-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Shell_F_Pink-effect">
+			<profile_COMMON>
+				<newparam sid="Shell_F_Pink-surface">
+					<surface type="2D">
+						<init_from>Shell_F_Pink</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Shell_F_Pink-sampler">
+					<sampler2D>
+						<source>Shell_F_Pink-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Shell_F_Pink-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Shell_F_Orange-effect">
+			<profile_COMMON>
+				<newparam sid="Shell_F_Orange-surface">
+					<surface type="2D">
+						<init_from>Shell_F_Orange</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Shell_F_Orange-sampler">
+					<sampler2D>
+						<source>Shell_F_Orange-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Shell_F_Orange-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Eyes-effect">
+			<profile_COMMON>
+				<newparam sid="Eyes-surface">
+					<surface type="2D">
+						<init_from>Eyes</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Eyes-sampler">
+					<sampler2D>
+						<source>Eyes-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Eyes-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Skin-effect">
+			<profile_COMMON>
+				<newparam sid="Skin_Green-surface">
+					<surface type="2D">
+						<init_from>Skin_Green</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Skin_Green-sampler">
+					<sampler2D>
+						<source>Skin_Green-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Skin_Green-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Skin_Blue-effect">
+			<profile_COMMON>
+				<newparam sid="Skin_Blue-surface">
+					<surface type="2D">
+						<init_from>Skin_Blue</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Skin_Blue-sampler">
+					<sampler2D>
+						<source>Skin_Blue-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Skin_Blue-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Skin_Orange-effect">
+			<profile_COMMON>
+				<newparam sid="Skin_Orange-surface">
+					<surface type="2D">
+						<init_from>Skin_Orange</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Skin_Orange-sampler">
+					<sampler2D>
+						<source>Skin_Orange-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Skin_Orange-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Skin_Pink-effect">
+			<profile_COMMON>
+				<newparam sid="Skin_Pink-surface">
+					<surface type="2D">
+						<init_from>Skin_Pink</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Skin_Pink-sampler">
+					<sampler2D>
+						<source>Skin_Pink-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Skin_Pink-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Skin_Yellow-effect">
+			<profile_COMMON>
+				<newparam sid="Skin_Yellow-surface">
+					<surface type="2D">
+						<init_from>Skin_Yellow</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Skin_Yellow-sampler">
+					<sampler2D>
+						<source>Skin_Yellow-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Skin_Yellow-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Leaves-effect">
+			<profile_COMMON>
+				<newparam sid="Leaves_M-surface">
+					<surface type="2D">
+						<init_from>Leaves_M</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Leaves_M-sampler">
+					<sampler2D>
+						<source>Leaves_M-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Leaves_M-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Leaves_F-effect">
+			<profile_COMMON>
+				<newparam sid="Leaves_F-surface">
+					<surface type="2D">
+						<init_from>Leaves_F</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Leaves_F-sampler">
+					<sampler2D>
+						<source>Leaves_F-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Leaves_F-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_HeadStalk-effect">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">1 1 1 1</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_F_Bra-effect">
+			<profile_COMMON>
+				<newparam sid="Bra_F_Empty-surface">
+					<surface type="2D">
+						<init_from>Bra_F_Empty</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Bra_F_Empty-sampler">
+					<sampler2D>
+						<source>Bra_F_Empty-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Bra_F_Empty-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_F_Bra_Rua-effect">
+			<profile_COMMON>
+				<newparam sid="Bra_F_Rua-surface">
+					<surface type="2D">
+						<init_from>Bra_F_Rua</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Bra_F_Rua-sampler">
+					<sampler2D>
+						<source>Bra_F_Rua-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Bra_F_Rua-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+		<effect id="Pianta_Flower-effect">
+			<profile_COMMON>
+				<newparam sid="Flower_16_png-surface">
+					<surface type="2D">
+						<init_from>Flower_16_png</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="Flower_16_png-sampler">
+					<sampler2D>
+						<source>Flower_16_png-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color sid="emission">0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="Flower_16_png-sampler" texcoord="UVMap"/>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.5 0.5 0.5 1</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">50</float>
+						</shininess>
+						<index_of_refraction>
+							<float sid="index_of_refraction">1</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+				<extra>
+					<technique profile="SM64DSe">
+						<double_sided>1</double_sided>
+					</technique>
+				</extra>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="skin" name="skin">
+			<instance_effect url="#skin-effect"/>
+		</material>
+		<material id="Eye_Skin" name="Eye_Skin">
+			<instance_effect url="#Eye_Skin-effect"/>
+		</material>
+		<material id="ShellInterior" name="ShellInterior">
+			<instance_effect url="#ShellInterior-effect"/>
+		</material>
+		<material id="Hair" name="Hair">
+			<instance_effect url="#Hair-effect"/>
+		</material>
+		<material id="Hair_M_Blue" name="Hair_M_Blue">
+			<instance_effect url="#Hair_M_Blue-effect"/>
+		</material>
+		<material id="Hair_M_Red" name="Hair_M_Red">
+			<instance_effect url="#Hair_M_Red-effect"/>
+		</material>
+		<material id="Hair_F_Purple" name="Hair_F_Purple">
+			<instance_effect url="#Hair_F_Purple-effect"/>
+		</material>
+		<material id="Hair_F_Pink" name="Hair_F_Pink">
+			<instance_effect url="#Hair_F_Pink-effect"/>
+		</material>
+		<material id="Hair_F_Orange" name="Hair_F_Orange">
+			<instance_effect url="#Hair_F_Orange-effect"/>
+		</material>
+		<material id="Shell" name="Shell">
+			<instance_effect url="#Shell-effect"/>
+		</material>
+		<material id="Shell_M_Blue" name="Shell_M_Blue">
+			<instance_effect url="#Shell_M_Blue-effect"/>
+		</material>
+		<material id="Shell_M_Red" name="Shell_M_Red">
+			<instance_effect url="#Shell_M_Red-effect"/>
+		</material>
+		<material id="Shell_F_Purple" name="Shell_F_Purple">
+			<instance_effect url="#Shell_F_Purple-effect"/>
+		</material>
+		<material id="Shell_F_Pink" name="Shell_F_Pink">
+			<instance_effect url="#Shell_F_Pink-effect"/>
+		</material>
+		<material id="Shell_F_Orange" name="Shell_F_Orange">
+			<instance_effect url="#Shell_F_Orange-effect"/>
+		</material>
+		<material id="Pianta_Eyes" name="Pianta_Eyes">
+			<instance_effect url="#Pianta_Eyes-effect"/>
+		</material>
+		<material id="Pianta_Skin" name="Pianta_Skin">
+			<instance_effect url="#Pianta_Skin-effect"/>
+		</material>
+		<material id="Pianta_Skin_Blue" name="Pianta_Skin_Blue">
+			<instance_effect url="#Pianta_Skin_Blue-effect"/>
+		</material>
+		<material id="Pianta_Skin_Orange" name="Pianta_Skin_Orange">
+			<instance_effect url="#Pianta_Skin_Orange-effect"/>
+		</material>
+		<material id="Pianta_Skin_Pink" name="Pianta_Skin_Pink">
+			<instance_effect url="#Pianta_Skin_Pink-effect"/>
+		</material>
+		<material id="Pianta_Skin_Yellow" name="Pianta_Skin_Yellow">
+			<instance_effect url="#Pianta_Skin_Yellow-effect"/>
+		</material>
+		<material id="Pianta_Leaves" name="Pianta_Leaves">
+			<instance_effect url="#Pianta_Leaves-effect"/>
+		</material>
+		<material id="Pianta_Leaves_F" name="Pianta_Leaves_F">
+			<instance_effect url="#Pianta_Leaves_F-effect"/>
+		</material>
+		<material id="Pianta_HeadStalk" name="Pianta_HeadStalk">
+			<instance_effect url="#Pianta_HeadStalk-effect"/>
+		</material>
+		<material id="Pianta_F_Bra" name="Pianta_F_Bra">
+			<instance_effect url="#Pianta_F_Bra-effect"/>
+		</material>
+		<material id="Pianta_F_Bra_Rua" name="Pianta_F_Bra_Rua">
+			<instance_effect url="#Pianta_F_Bra_Rua-effect"/>
+		</material>
+		<material id="Pianta_Flower" name="Pianta_Flower">
+			<instance_effect url="#Pianta_Flower-effect"/>
+		</material>
+	</library_materials>

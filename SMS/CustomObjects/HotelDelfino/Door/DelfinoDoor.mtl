@@ -1,0 +1,13 @@
+# Blender MTL File: 'DelfinoDoor.blend'
+# Material Count: 1
+newmtl mat_door5_horror_door5_horror.png.001
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1 1 1
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd door5_horror_new.png
+
+
