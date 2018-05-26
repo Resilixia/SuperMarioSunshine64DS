@@ -1,0 +1,9 @@
+Using Whomp's Fortress' CLPS data:
+
+Solid:
+1
+
+Water:
+2
+
+0 - 124 Water

@@ -1,0 +1,10 @@
+Test Map A
+
+Solid:
+1
+
+Water:
+20
+
+
+Planes 4048 - 4059

@@ -1,0 +1,34 @@
+Sand:
+Kd 1.000000 1.000000 0.5
+
+Water:
+Kd 0.098 0.671 1
+Tr 0.5
+
+Grass:
+0.031 0.753 0
+
+Dummy_Pinkish:
+0.953 0.647 0.569
+
+Dummy_Brown:
+0.569 0.333 0.024
+
+Dummy_Egg:
+0.408 0.263 0.031
+
+Dummy_Purple:
+0.569 0.020 1
+
+Dummy_YellowTable:
+1 0.871 0
+
+Dummy_Violet:
+0.796 0.639 0.976
+
+Dummy_LightBlue2:
+0.290 0.537 0.992
+
+Dummy_LightBlue1:
+0.467 0.655 1
+

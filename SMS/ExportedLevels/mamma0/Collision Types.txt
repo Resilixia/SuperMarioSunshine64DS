@@ -1,0 +1,9 @@
+Jolly Roger Bay
+
+Water:
+Type 8
+
+Ground:
+Type 0
+
+1991 - 2005

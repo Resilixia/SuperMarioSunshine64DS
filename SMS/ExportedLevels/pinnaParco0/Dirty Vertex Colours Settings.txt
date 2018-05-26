@@ -1,0 +1,6 @@
+Pinna Park:
+0.01
+20
+73
+0
+FALSE

@@ -1,0 +1,12 @@
+Green:
+1CE300
+DAFF00
+
+Orange:
+FF2000
+FF9000
+
+Yellow:
+FF9000
+FFEE00
+

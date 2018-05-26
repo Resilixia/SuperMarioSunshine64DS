@@ -1,0 +1,2 @@
+Blender: 2.70a
+Import-Export: Extended Wavefront OBJ format: 2.59

@@ -1,0 +1,13 @@
+Pianta Village - Daytime:
+0.15
+2
+80
+0
+TRUE
+
+Pianta Village - Nighttime:
+0.15
+2
+80
+0
+TRUE

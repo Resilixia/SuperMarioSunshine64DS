@@ -1,0 +1,9 @@
+Faces 0 - 65
+
+Using Whomp's Fortress' CLPS data:
+
+Solid:
+1
+
+Water:
+2

@@ -1,0 +1,9 @@
+Daytime:
+0.01
+1
+n/a
+0
+TRUE
+
+Deselect the tree bark and palm leaf undersides
+

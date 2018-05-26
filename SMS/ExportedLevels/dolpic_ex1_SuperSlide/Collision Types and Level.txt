@@ -1,0 +1,13 @@
+Using Princess' Secret Slide Collision:
+
+Slide:
+4
+
+Timer Start:
+7
+
+Timer End:
+6
+
+To replace ? Switch. Switch at end and you have to collect 8 
+red coins on the way down.

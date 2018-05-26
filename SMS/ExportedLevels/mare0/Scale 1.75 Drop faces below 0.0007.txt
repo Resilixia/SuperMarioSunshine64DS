@@ -1,0 +1,1 @@
+Scale 1.75 Drop faces below 0.0007

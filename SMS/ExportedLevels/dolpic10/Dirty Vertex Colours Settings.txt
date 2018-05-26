@@ -1,0 +1,6 @@
+Delfino Plaza:
+0.25
+1
+80
+0
+FALSE
