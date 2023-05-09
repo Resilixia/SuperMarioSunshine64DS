@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.2 PRIVATE BETA 20140922-->
+<Level id="11">
+	<LevelSettings>
+		<ObjectBankSettings>
+			<Bank id="0">2</Bank>
+			<Bank id="1">0</Bank>
+			<Bank id="2">3</Bank>
+			<Bank id="3">1</Bank>
+			<Bank id="4">3</Bank>
+			<Bank id="5">1</Bank>
+			<Bank id="6">1</Bank>
+			<Bank id="7">8</Bank>
+		</ObjectBankSettings>
+		<LevelModel>
+			<!--data/stage/snow_slider/snow_slider_all.bmd-->
+			<Location>./snow_slider_all.bmd</Location>
+		</LevelModel>
+		<CollisionMap>
+			<!--data/stage/snow_slider/snow_slider.kcl-->
+			<Location>./snow_slider.kcl</Location>
+		</CollisionMap>
+		<MinimapSettings>
+			<Tileset>
+				<!--data/stage/snow_slider/snow_slider_icg.bin-->
+				<Location>./snow_slider_icg.bin</Location>
+			</Tileset>
+			<Palette>
+				<!--data/stage/snow_slider/snow_slider_icl.bin-->
+				<Location>./snow_slider_icl.bin</Location>
+			</Palette>
+			<CoordinateScale>900</CoordinateScale>
+		</MinimapSettings>
+		<NumberOfAreas>1</NumberOfAreas>
+		<CameraStartZoomedOut>0</CameraStartZoomedOut>
+		<Background>0</Background>
+		<Music>
+			<Byte>7</Byte>
+			<Byte>34</Byte>
+			<Byte>58</Byte>
+		</Music>
+		<ActSelectorID>4</ActSelectorID>
+	</LevelSettings>
+	<CLPS>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>15</Byte>
+				<Byte>3</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>194</Byte>
+				<Byte>15</Byte>
+				<Byte>3</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>197</Byte>
+				<Byte>47</Byte>
+				<Byte>3</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>204</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>200</Byte>
+				<Byte>47</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>47</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>192</Byte>
+				<Byte>15</Byte>
+				<Byte>0</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>224</Byte>
+				<Byte>15</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>192</Byte>
+				<Byte>15</Byte>
+				<Byte>32</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>15</Byte>
+				<Byte>3</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>197</Byte>
+				<Byte>15</Byte>
+				<Byte>3</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>204</Byte>
+				<Byte>15</Byte>
+				<Byte>136</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+	</CLPS>
+	<LevelData>
+		<Objects>
+			<ViewObject>
+				<Position>
+					<X>0</X>
+					<Y>4.453</Y>
+					<Z>0</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>3.999</X>
+					<Y>0.896</Y>
+					<Z>4.703</Z>
+				</Position>
+				<YRotation>-90</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>4.197</X>
+					<Y>2.894</Y>
+					<Z>-0.241</Z>
+				</Position>
+				<YRotation>-90</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>2.5</X>
+					<Y>2.911</Y>
+					<Z>2.2</Z>
+				</Position>
+				<YRotation>-90</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>1.2</X>
+					<Y>2.7</Y>
+					<Z>2.7</Z>
+				</Position>
+				<YRotation>-180</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>0</X>
+					<Y>3.5</Y>
+					<Z>0</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65287</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>0</X>
+					<Y>4.453</Y>
+					<Z>0</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65280</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<MinimapTileIDObject>
+				<!--1987-->
+				<Tilemap>
+					<!--data/stage/snow_slider/snow_slider_00_isc.bin-->
+					<Location>./snow_slider_00_isc.bin</Location>
+				</Tilemap>
+			</MinimapTileIDObject>
+			<EntranceObject entranceID="0">
+				<Position>
+					<X>1</X>
+					<Y>-1.6</Y>
+					<Z>1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="1">
+				<Position>
+					<X>3.1</X>
+					<Y>1.95</Y>
+					<Z>4.6</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="2">
+				<Position>
+					<X>3.1</X>
+					<Y>1.95</Y>
+					<Z>4.8</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="3">
+				<Position>
+					<X>3.1</X>
+					<Y>1.95</Y>
+					<Z>5</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<Type14Object>
+				<Parameters count="4">
+					<Parameter id="0">20</Parameter>
+					<Parameter id="1">17</Parameter>
+					<Parameter id="2">1</Parameter>
+					<Parameter id="3">1</Parameter>
+				</Parameters>
+			</Type14Object>
+			<MinimapScaleObject>
+				<Scale>4000</Scale>
+			</MinimapScaleObject>
+			<StandardObject area="0" star="0">
+				<!--MERRYGOROUND-->
+				<ObjectID>72</ObjectID>
+				<Position>
+					<X>0</X>
+					<Y>-2</Y>
+					<Z>0</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--BOSS_TERESA-->
+				<ObjectID>68</ObjectID>
+				<Position>
+					<X>0</X>
+					<Y>-2</Y>
+					<Z>0</Z>
+				</Position>
+				<YRotation>45</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">256</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_SWITCH-->
+				<ObjectID>315</ObjectID>
+				<Position>
+					<X>-0.3</X>
+					<Y>-2.16</Y>
+					<Z>0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">32</Parameter>
+					<Parameter id="1">1</Parameter>
+					<Parameter id="2">65535</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_SWITCH-->
+				<ObjectID>315</ObjectID>
+				<Position>
+					<X>0.3</X>
+					<Y>-2.16</Y>
+					<Z>0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">33</Parameter>
+					<Parameter id="1">1</Parameter>
+					<Parameter id="2">65535</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_SWITCH-->
+				<ObjectID>315</ObjectID>
+				<Position>
+					<X>0.3</X>
+					<Y>-2.16</Y>
+					<Z>-0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">34</Parameter>
+					<Parameter id="1">1</Parameter>
+					<Parameter id="2">65535</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_SWITCH-->
+				<ObjectID>315</ObjectID>
+				<Position>
+					<X>-0.3</X>
+					<Y>-2.16</Y>
+					<Z>-0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">35</Parameter>
+					<Parameter id="1">1</Parameter>
+					<Parameter id="2">65535</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_CREATE-->
+				<ObjectID>316</ObjectID>
+				<Position>
+					<X>-0.3</X>
+					<Y>-1.6</Y>
+					<Z>0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65472</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">992</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_CREATE-->
+				<ObjectID>316</ObjectID>
+				<Position>
+					<X>0.3</X>
+					<Y>-1.6</Y>
+					<Z>0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65472</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">993</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_CREATE-->
+				<ObjectID>316</ObjectID>
+				<Position>
+					<X>0.3</X>
+					<Y>-1.6</Y>
+					<Z>-0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65472</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">994</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ENEMY_CREATE-->
+				<ObjectID>316</ObjectID>
+				<Position>
+					<X>-0.3</X>
+					<Y>-1.6</Y>
+					<Z>-0.4</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65472</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">995</Parameter>
+				</Parameters>
+			</StandardObject>
+			<SimpleObject area="0" star="0">
+				<!--STARBASE-->
+				<ObjectID>63</ObjectID>
+				<Position>
+					<X>0</X>
+					<Y>-1.6</Y>
+					<Z>0</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">33</Parameter>
+				</Parameters>
+			</SimpleObject>
+		</Objects>
+		<TextureAnimationData>
+			<TextureAnimationArea area="0">
+				<NumberOfFrames>91</NumberOfFrames>
+				<NumberOfAnimations>2</NumberOfAnimations>
+				<ScaleTable>
+					<UInt>4096</UInt>
+				</ScaleTable>
+				<RotationTable>
+					<UShort>2048</UShort>
+					<UShort>0</UShort>
+				</RotationTable>
+				<TranslationTable>
+					<UInt>0</UInt>
+					<UInt>46</UInt>
+					<UInt>91</UInt>
+					<UInt>137</UInt>
+					<UInt>182</UInt>
+					<UInt>228</UInt>
+					<UInt>273</UInt>
+					<UInt>319</UInt>
+					<UInt>364</UInt>
+					<UInt>410</UInt>
+					<UInt>455</UInt>
+					<UInt>501</UInt>
+					<UInt>546</UInt>
+					<UInt>592</UInt>
+					<UInt>637</UInt>
+					<UInt>683</UInt>
+					<UInt>728</UInt>
+					<UInt>774</UInt>
+					<UInt>819</UInt>
+					<UInt>865</UInt>
+					<UInt>910</UInt>
+					<UInt>956</UInt>
+					<UInt>1001</UInt>
+					<UInt>1047</UInt>
+					<UInt>1092</UInt>
+					<UInt>1138</UInt>
+					<UInt>1183</UInt>
+					<UInt>1229</UInt>
+					<UInt>1274</UInt>
+					<UInt>1320</UInt>
+					<UInt>1365</UInt>
+					<UInt>1411</UInt>
+					<UInt>1456</UInt>
+					<UInt>1502</UInt>
+					<UInt>1547</UInt>
+					<UInt>1593</UInt>
+					<UInt>1638</UInt>
+					<UInt>1684</UInt>
+					<UInt>1729</UInt>
+					<UInt>1775</UInt>
+					<UInt>1820</UInt>
+					<UInt>1866</UInt>
+					<UInt>1911</UInt>
+					<UInt>1957</UInt>
+					<UInt>2002</UInt>
+					<UInt>2048</UInt>
+					<UInt>2094</UInt>
+					<UInt>2139</UInt>
+					<UInt>2185</UInt>
+					<UInt>2230</UInt>
+					<UInt>2276</UInt>
+					<UInt>2321</UInt>
+					<UInt>2367</UInt>
+					<UInt>2412</UInt>
+					<UInt>2458</UInt>
+					<UInt>2503</UInt>
+					<UInt>2549</UInt>
+					<UInt>2594</UInt>
+					<UInt>2640</UInt>
+					<UInt>2685</UInt>
+					<UInt>2731</UInt>
+					<UInt>2776</UInt>
+					<UInt>2822</UInt>
+					<UInt>2867</UInt>
+					<UInt>2913</UInt>
+					<UInt>2958</UInt>
+					<UInt>3004</UInt>
+					<UInt>3049</UInt>
+					<UInt>3095</UInt>
+					<UInt>3140</UInt>
+					<UInt>3186</UInt>
+					<UInt>3231</UInt>
+					<UInt>3277</UInt>
+					<UInt>3322</UInt>
+					<UInt>3368</UInt>
+					<UInt>3413</UInt>
+					<UInt>3459</UInt>
+					<UInt>3504</UInt>
+					<UInt>3550</UInt>
+					<UInt>3595</UInt>
+					<UInt>3641</UInt>
+					<UInt>3686</UInt>
+					<UInt>3732</UInt>
+					<UInt>3777</UInt>
+					<UInt>3823</UInt>
+					<UInt>3868</UInt>
+					<UInt>3914</UInt>
+					<UInt>3959</UInt>
+					<UInt>4005</UInt>
+					<UInt>4050</UInt>
+					<UInt>4096</UInt>
+				</TranslationTable>
+				<TextureAnimation>
+					<MaterialName>ColouredWall</MaterialName>
+					<ScaleStartIndex>0</ScaleStartIndex>
+					<ScaleLength>1</ScaleLength>
+					<RotationStartIndex>0</RotationStartIndex>
+					<RotationLength>1</RotationLength>
+					<TranslationStartIndex>0</TranslationStartIndex>
+					<TranslationLength>91</TranslationLength>
+					<DefaultScaleValue>1</DefaultScaleValue>
+				</TextureAnimation>
+				<TextureAnimation>
+					<MaterialName>mat_wall_1</MaterialName>
+					<ScaleStartIndex>0</ScaleStartIndex>
+					<ScaleLength>1</ScaleLength>
+					<RotationStartIndex>1</RotationStartIndex>
+					<RotationLength>1</RotationLength>
+					<TranslationStartIndex>0</TranslationStartIndex>
+					<TranslationLength>91</TranslationLength>
+					<DefaultScaleValue>1</DefaultScaleValue>
+				</TextureAnimation>
+			</TextureAnimationArea>
+		</TextureAnimationData>
+	</LevelData>
+</Level>

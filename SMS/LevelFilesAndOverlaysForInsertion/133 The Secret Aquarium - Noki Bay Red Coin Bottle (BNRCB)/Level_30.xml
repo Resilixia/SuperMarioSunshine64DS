@@ -1,0 +1,1157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor ULTIMATE v2.4.0 Dec 02, 2021-->
+<Level id="30" version="2">
+	<LevelSettings>
+		<ObjectBankSettings>
+			<Bank id="0">0</Bank>
+			<Bank id="1">0</Bank>
+			<Bank id="2">0</Bank>
+			<Bank id="3">0</Bank>
+			<Bank id="4">0</Bank>
+			<Bank id="5">1</Bank>
+			<Bank id="6">1</Bank>
+			<Bank id="7">31</Bank>
+		</ObjectBankSettings>
+		<LevelModel>
+			<!--data/stage/suisou/suisou_all.bmd-->
+			<Location>./suisou_all.bmd</Location>
+		</LevelModel>
+		<CollisionMap>
+			<!--data/stage/suisou/suisou.kcl-->
+			<Location>./suisou.kcl</Location>
+		</CollisionMap>
+		<MinimapSettings>
+			<Tileset>
+				<!--data/stage/suisou/suisou_icg.bin-->
+				<Location>./suisou_icg.bin</Location>
+			</Tileset>
+			<Palette>
+				<!--data/stage/suisou/suisou_icl.bin-->
+				<Location>./suisou_icl.bin</Location>
+			</Palette>
+			<CoordinateScale>800</CoordinateScale>
+			<MinimapTilemapIndices>
+				<MinimapTilemapIndex area="0">0</MinimapTilemapIndex>
+			</MinimapTilemapIndices>
+		</MinimapSettings>
+		<NumberOfAreas>1</NumberOfAreas>
+		<CameraStartZoomedOut>0</CameraStartZoomedOut>
+		<Background>2</Background>
+		<Music>
+			<Byte>25</Byte>
+			<Byte>38</Byte>
+			<Byte>59</Byte>
+		</Music>
+		<ActSelectorID>6</ActSelectorID>
+	</LevelSettings>
+	<CLPS>
+		<Entry>
+			<TerrainType>4</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>2</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>8</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>5</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>2</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>12</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>2</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>3</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>2</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>12</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>true</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>4</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>4</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>4</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>12</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>17</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+	</CLPS>
+	<LevelData>
+		<Objects>
+			<ViewObject>
+				<Position>
+					<X>0.1</X>
+					<Y>2.8</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<MinimapTileIDObject>
+				<!--1992-->
+				<Tilemap>
+					<!--data/stage/suisou/suisou_00_isc.bin-->
+					<Location>./suisou_00_isc.bin</Location>
+				</Tilemap>
+			</MinimapTileIDObject>
+			<EntranceObject entranceID="0">
+				<Position>
+					<X>0.1</X>
+					<Y>2.4</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">128</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="1">
+				<Position>
+					<X>-0.4</X>
+					<Y>2.4</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">128</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="2">
+				<Position>
+					<X>-0.1</X>
+					<Y>2.4</Y>
+					<Z>-0.5</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">128</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="3">
+				<Position>
+					<X>0.45</X>
+					<Y>2.4</Y>
+					<Z>-0.5</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">128</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<FogObject>
+				<Density>0</Density>
+				<Red>255</Red>
+				<Green>255</Green>
+				<Blue>255</Blue>
+				<StartDistance>10000</StartDistance>
+				<EndDistance>20000</EndDistance>
+			</FogObject>
+			<FogObject>
+				<Density>1</Density>
+				<Red>0</Red>
+				<Green>112</Green>
+				<Blue>192</Blue>
+				<StartDistance>0</StartDistance>
+				<EndDistance>38000</EndDistance>
+			</FogObject>
+			<MinimapScaleObject>
+				<Scale>3200</Scale>
+			</MinimapScaleObject>
+			<Type14Object>
+				<Parameters count="4">
+					<Parameter id="0">4</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">0</Parameter>
+				</Parameters>
+			</Type14Object>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>-2.3</X>
+					<Y>-1.4</Y>
+					<Z>-2.5</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>-2.3</X>
+					<Y>-1.4</Y>
+					<Z>2.2</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>2.5</X>
+					<Y>-1.4</Y>
+					<Z>2.2</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>2.5</X>
+					<Y>-1.4</Y>
+					<Z>-2.5</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--STARBASE-->
+				<ObjectID>63</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>-1.15</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">1</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>-0.501</Y>
+					<Z>0.4</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>-0.501</Y>
+					<Z>-0.6</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-0.4</X>
+					<Y>-0.501</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.6</X>
+					<Y>-0.501</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.45</X>
+					<Y>-0.501</Y>
+					<Z>0.25</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-0.25</X>
+					<Y>-0.501</Y>
+					<Z>0.25</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-0.25</X>
+					<Y>-0.501</Y>
+					<Z>-0.45</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.45</X>
+					<Y>-0.501</Y>
+					<Z>-0.45</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>2.399</X>
+					<Y>1.001</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>-2.2</X>
+					<Y>1</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.991</Y>
+					<Z>2.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--RED_COIN-->
+				<ObjectID>38</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1</Y>
+					<Z>-2.399</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">17</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.77</Y>
+					<Z>-2.199</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.77</Y>
+					<Z>-2.6</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1.3</Y>
+					<Z>-2.399</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.699</Y>
+					<Z>-2.399</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1</Y>
+					<Z>-2.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1.231</Y>
+					<Z>-2.199</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1.239</Y>
+					<Z>-2.6</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1</Y>
+					<Z>-2.699</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.751</Y>
+					<Z>2.3</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.751</Y>
+					<Z>1.899</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1.282</Y>
+					<Z>2.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.682</Y>
+					<Z>2.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.982</Y>
+					<Z>2.4</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1.212</Y>
+					<Z>2.3</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>1.22</Y>
+					<Z>1.899</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>0.982</Y>
+					<Z>1.8</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-1.9</X>
+					<Y>1</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-2.5</X>
+					<Y>1</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-2.2</X>
+					<Y>1.3</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-2.2</X>
+					<Y>0.699</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-2.4</X>
+					<Y>0.767</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-1.999</X>
+					<Y>0.761</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-1.999</X>
+					<Y>1.234</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>-2.4</X>
+					<Y>1.225</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.699</X>
+					<Y>1.001</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.1</X>
+					<Y>1.001</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.399</X>
+					<Y>1.3</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.399</X>
+					<Y>0.701</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.199</X>
+					<Y>0.767</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.6</X>
+					<Y>0.761</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.6</X>
+					<Y>1.234</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--COIN-->
+				<ObjectID>37</ObjectID>
+				<Position>
+					<X>2.199</X>
+					<Y>1.225</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">113</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.463</X>
+					<Y>-0.797</Y>
+					<Z>0.636</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">5</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.318</X>
+					<Y>-0.331</Y>
+					<Z>0.849</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">21</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.373</X>
+					<Y>-0.076</Y>
+					<Z>-1.514</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">5</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.228</X>
+					<Y>0.411</Y>
+					<Z>-1.279</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">37</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-1.533</X>
+					<Y>-0.785</Y>
+					<Z>-1.126</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">5</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-1.679</X>
+					<Y>-0.341</Y>
+					<Z>-0.965</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">5</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-0.98</X>
+					<Y>-0.827</Y>
+					<Z>1.479</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">21</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-1.125</X>
+					<Y>-0.383</Y>
+					<Z>1.692</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">37</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.463</X>
+					<Y>1.514</Y>
+					<Z>0.649</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">5</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.318</X>
+					<Y>2.007</Y>
+					<Z>0.087</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">21</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-0.98</X>
+					<Y>1.741</Y>
+					<Z>-1.579</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">21</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-1.125</X>
+					<Y>2.186</Y>
+					<Z>-1.366</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">37</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.373</X>
+					<Y>1.12</Y>
+					<Z>1.571</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">5</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>1.228</X>
+					<Y>1.608</Y>
+					<Z>1.806</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">37</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-0.98</X>
+					<Y>0.912</Y>
+					<Z>0.146</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">21</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<SimpleObject area="0" star="0">
+				<!--FISH-->
+				<ObjectID>54</ObjectID>
+				<Position>
+					<X>-1.125</X>
+					<Y>1.493</Y>
+					<Z>-0.4</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">37</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<StandardObject area="0" star="0">
+				<!--ONEUPKINOKO-->
+				<ObjectID>49</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>-0.499</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">248</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--ONEUPKINOKO-->
+				<ObjectID>49</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>-0.499</Y>
+					<Z>-0.1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">23</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+		</Objects>
+		<TextureAnimationData>
+			<TextureAnimationArea area="0">
+				<NumberOfFrames>0</NumberOfFrames>
+				<NumberOfAnimations>0</NumberOfAnimations>
+				<ScaleTable length="0" />
+				<RotationTable length="0" />
+				<TranslationTable length="0" />
+			</TextureAnimationArea>
+		</TextureAnimationData>
+	</LevelData>
+</Level>

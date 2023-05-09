@@ -1,0 +1,1802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor v2.2 PRIVATE BETA 20140922-->
+<Level id="28">
+	<LevelSettings>
+		<ObjectBankSettings>
+			<Bank id="0">1</Bank>
+			<Bank id="1">2</Bank>
+			<Bank id="2">4</Bank>
+			<Bank id="3">1</Bank>
+			<Bank id="4">4</Bank>
+			<Bank id="5">3</Bank>
+			<Bank id="6">0</Bank>
+			<Bank id="7">29</Bank>
+		</ObjectBankSettings>
+		<LevelModel>
+			<!--data/stage/rainbow_cruise/rainbow_cruise_all.bmd-->
+			<Location>./rainbow_cruise_all.bmd</Location>
+		</LevelModel>
+		<CollisionMap>
+			<!--data/stage/rainbow_cruise/rainbow_cruise.kcl-->
+			<Location>./rainbow_cruise.kcl</Location>
+		</CollisionMap>
+		<MinimapSettings>
+			<Tileset>
+				<!--data/stage/rainbow_cruise/rainbow_cruise_icg.bin-->
+				<Location>./rainbow_cruise_icg.bin</Location>
+			</Tileset>
+			<Palette>
+				<!--data/stage/rainbow_cruise/rainbow_cruise_icl.bin-->
+				<Location>./rainbow_cruise_icl.bin</Location>
+			</Palette>
+			<CoordinateScale>2700</CoordinateScale>
+		</MinimapSettings>
+		<NumberOfAreas>1</NumberOfAreas>
+		<CameraStartZoomedOut>0</CameraStartZoomedOut>
+		<Background>1</Background>
+		<Music>
+			<Byte>36</Byte>
+			<Byte>53</Byte>
+			<Byte>68</Byte>
+		</Music>
+		<ActSelectorID>14</ActSelectorID>
+	</LevelSettings>
+	<CLPS>
+		<Entry>
+			<Value>
+				<Byte>192</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>200</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>197</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>204</Byte>
+				<Byte>15</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>200</Byte>
+				<Byte>47</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>47</Byte>
+				<Byte>4</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>192</Byte>
+				<Byte>15</Byte>
+				<Byte>0</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>224</Byte>
+				<Byte>15</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>192</Byte>
+				<Byte>15</Byte>
+				<Byte>32</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>196</Byte>
+				<Byte>15</Byte>
+				<Byte>3</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>197</Byte>
+				<Byte>15</Byte>
+				<Byte>3</Byte>
+				<Byte>0</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+		<Entry>
+			<Value>
+				<Byte>204</Byte>
+				<Byte>15</Byte>
+				<Byte>136</Byte>
+				<Byte>1</Byte>
+				<Byte>255</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+				<Byte>0</Byte>
+			</Value>
+		</Entry>
+	</CLPS>
+	<LevelData>
+		<Objects>
+			<PathObject>
+				<StartNodeIndex>0</StartNodeIndex>
+				<Length>4</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">255</Parameter>
+					<Parameter id="2">255</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="0">
+						<Position>
+							<X>1.749</X>
+							<Y>3.336</Y>
+							<Z>0.75</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="1">
+						<Position>
+							<X>-5.749</X>
+							<Y>3.336</Y>
+							<Z>0.75</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="2">
+						<Position>
+							<X>-5.752</X>
+							<Y>3.336</Y>
+							<Z>-2.493</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="3">
+						<Position>
+							<X>1.749</X>
+							<Y>3.336</Y>
+							<Z>-2.498</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>4</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="4">
+						<Position>
+							<X>2.55</X>
+							<Y>9.77</Y>
+							<Z>-5.585</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="5">
+						<Position>
+							<X>2.55</X>
+							<Y>9.77</Y>
+							<Z>-5.585</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>6</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="6">
+						<Position>
+							<X>-4.199</X>
+							<Y>2.028</Y>
+							<Z>2.5</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="7">
+						<Position>
+							<X>-3.615</X>
+							<Y>1.876</Y>
+							<Z>2.8</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>8</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="8">
+						<Position>
+							<X>-4.155</X>
+							<Y>2.02</Y>
+							<Z>3.25</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="9">
+						<Position>
+							<X>-3.615</X>
+							<Y>1.875</Y>
+							<Z>2.925</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>10</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="10">
+						<Position>
+							<X>-3.5</X>
+							<Y>2.03</Y>
+							<Z>3.669</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="11">
+						<Position>
+							<X>-3.5</X>
+							<Y>1.883</Y>
+							<Z>3.026</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>12</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="12">
+						<Position>
+							<X>-2.818</X>
+							<Y>2.026</Y>
+							<Z>3.25</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="13">
+						<Position>
+							<X>-3.38</X>
+							<Y>1.876</Y>
+							<Z>2.925</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>14</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="14">
+						<Position>
+							<X>-2.816</X>
+							<Y>2.023</Y>
+							<Z>2.5</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="15">
+						<Position>
+							<X>-3.38</X>
+							<Y>1.877</Y>
+							<Z>2.8</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>16</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="16">
+						<Position>
+							<X>-0.496</X>
+							<Y>2.028</Y>
+							<Z>2.076</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="17">
+						<Position>
+							<X>-0.496</X>
+							<Y>1.875</Y>
+							<Z>2.736</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>18</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="18">
+						<Position>
+							<X>-1.196</X>
+							<Y>2.026</Y>
+							<Z>2.504</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="19">
+						<Position>
+							<X>-0.611</X>
+							<Y>1.875</Y>
+							<Z>2.804</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>20</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="20">
+						<Position>
+							<X>-1.152</X>
+							<Y>2.02</Y>
+							<Z>3.254</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="21">
+						<Position>
+							<X>-0.611</X>
+							<Y>1.875</Y>
+							<Z>2.929</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>22</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="22">
+						<Position>
+							<X>-0.496</X>
+							<Y>2.032</Y>
+							<Z>3.673</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="23">
+						<Position>
+							<X>-0.496</X>
+							<Y>1.885</Y>
+							<Z>3.03</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>24</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="24">
+						<Position>
+							<X>0.184</X>
+							<Y>2.026</Y>
+							<Z>3.254</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="25">
+						<Position>
+							<X>-0.376</X>
+							<Y>1.879</Y>
+							<Z>2.929</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>26</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="26">
+						<Position>
+							<X>0.186</X>
+							<Y>2.025</Y>
+							<Z>2.504</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="27">
+						<Position>
+							<X>-0.376</X>
+							<Y>1.877</Y>
+							<Z>2.804</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>28</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="28">
+						<Position>
+							<X>0.989</X>
+							<Y>2.029</Y>
+							<Z>2.939</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="29">
+						<Position>
+							<X>0.989</X>
+							<Y>1.876</Y>
+							<Z>3.598</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>30</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="30">
+						<Position>
+							<X>0.289</X>
+							<Y>2.03</Y>
+							<Z>3.366</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="31">
+						<Position>
+							<X>0.874</X>
+							<Y>1.879</Y>
+							<Z>3.666</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>32</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="32">
+						<Position>
+							<X>0.333</X>
+							<Y>2.023</Y>
+							<Z>4.116</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="33">
+						<Position>
+							<X>0.874</X>
+							<Y>1.877</Y>
+							<Z>3.791</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>34</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="34">
+						<Position>
+							<X>0.989</X>
+							<Y>2.03</Y>
+							<Z>4.535</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="35">
+						<Position>
+							<X>0.989</X>
+							<Y>1.883</Y>
+							<Z>3.892</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>36</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="36">
+						<Position>
+							<X>1.67</X>
+							<Y>2.023</Y>
+							<Z>4.116</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="37">
+						<Position>
+							<X>1.109</X>
+							<Y>1.874</Y>
+							<Z>3.791</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>38</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="38">
+						<Position>
+							<X>1.672</X>
+							<Y>2.022</Y>
+							<Z>3.366</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="39">
+						<Position>
+							<X>1.109</X>
+							<Y>1.875</Y>
+							<Z>3.666</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>40</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="40">
+						<Position>
+							<X>2.996</X>
+							<Y>2.029</Y>
+							<Z>-0.429</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="41">
+						<Position>
+							<X>2.996</X>
+							<Y>1.877</Y>
+							<Z>0.23</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>42</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="42">
+						<Position>
+							<X>2.296</X>
+							<Y>2.029</Y>
+							<Z>-0.002</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="43">
+						<Position>
+							<X>2.881</X>
+							<Y>1.877</Y>
+							<Z>0.297</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>44</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="44">
+						<Position>
+							<X>2.34</X>
+							<Y>2.02</Y>
+							<Z>0.747</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="45">
+						<Position>
+							<X>2.881</X>
+							<Y>1.876</Y>
+							<Z>0.422</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>46</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="46">
+						<Position>
+							<X>2.996</X>
+							<Y>2.03</Y>
+							<Z>1.167</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="47">
+						<Position>
+							<X>2.996</X>
+							<Y>1.882</Y>
+							<Z>0.524</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>48</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="48">
+						<Position>
+							<X>3.677</X>
+							<Y>2.025</Y>
+							<Z>0.747</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="49">
+						<Position>
+							<X>3.116</X>
+							<Y>1.875</Y>
+							<Z>0.422</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>50</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="50">
+						<Position>
+							<X>3.679</X>
+							<Y>2.023</Y>
+							<Z>-0.002</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="51">
+						<Position>
+							<X>3.116</X>
+							<Y>1.877</Y>
+							<Z>0.297</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>52</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="52">
+						<Position>
+							<X>5.607</X>
+							<Y>2.028</Y>
+							<Z>4.823</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="53">
+						<Position>
+							<X>5.607</X>
+							<Y>1.876</Y>
+							<Z>5.483</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>54</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="54">
+						<Position>
+							<X>4.907</X>
+							<Y>2.03</Y>
+							<Z>5.251</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="55">
+						<Position>
+							<X>5.492</X>
+							<Y>1.88</Y>
+							<Z>5.551</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>56</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="56">
+						<Position>
+							<X>4.951</X>
+							<Y>2.025</Y>
+							<Z>6.001</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="57">
+						<Position>
+							<X>5.492</X>
+							<Y>1.88</Y>
+							<Z>5.676</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>58</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="58">
+						<Position>
+							<X>5.607</X>
+							<Y>2.03</Y>
+							<Z>6.42</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="59">
+						<Position>
+							<X>5.607</X>
+							<Y>1.883</Y>
+							<Z>5.777</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>60</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="60">
+						<Position>
+							<X>6.288</X>
+							<Y>2.023</Y>
+							<Z>6.001</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="61">
+						<Position>
+							<X>5.727</X>
+							<Y>1.873</Y>
+							<Z>5.676</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>62</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="62">
+						<Position>
+							<X>6.29</X>
+							<Y>2.02</Y>
+							<Z>5.251</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="63">
+						<Position>
+							<X>5.727</X>
+							<Y>1.873</Y>
+							<Z>5.551</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>64</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">3</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="64">
+						<Position>
+							<X>0.278</X>
+							<Y>2.029</Y>
+							<Z>7.532</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="65">
+						<Position>
+							<X>0.278</X>
+							<Y>1.811</Y>
+							<Z>7.971</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>66</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">3</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="66">
+						<Position>
+							<X>7.502</X>
+							<Y>2.043</Y>
+							<Z>-0.151</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="67">
+						<Position>
+							<X>7.976</X>
+							<Y>1.807</Y>
+							<Z>-0.151</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>68</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="68">
+						<Position>
+							<X>-1.993</X>
+							<Y>2.045</Y>
+							<Z>1.911</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="69">
+						<Position>
+							<X>-1.993</X>
+							<Y>2.045</Y>
+							<Z>1.111</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>70</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="70">
+						<Position>
+							<X>0.46</X>
+							<Y>2.023</Y>
+							<Z>1.452</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="71">
+						<Position>
+							<X>0.071</X>
+							<Y>1.835</Y>
+							<Z>1.083</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>72</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="72">
+						<Position>
+							<X>0.913</X>
+							<Y>2.023</Y>
+							<Z>-1.114</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="73">
+						<Position>
+							<X>0.111</X>
+							<Y>1.823</Y>
+							<Z>-1.114</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>74</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="74">
+						<Position>
+							<X>0.436</X>
+							<Y>2.045</Y>
+							<Z>-3.416</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="75">
+						<Position>
+							<X>0.135</X>
+							<Y>1.861</Y>
+							<Z>-3.125</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>76</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="76">
+						<Position>
+							<X>-1.921</X>
+							<Y>2.025</Y>
+							<Z>-3.917</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="77">
+						<Position>
+							<X>-1.921</X>
+							<Y>1.825</Y>
+							<Z>-3.119</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>78</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="78">
+						<Position>
+							<X>-4.468</X>
+							<Y>2.015</Y>
+							<Z>-3.41</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="79">
+						<Position>
+							<X>-4.085</X>
+							<Y>1.842</Y>
+							<Z>-3.101</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>80</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="80">
+						<Position>
+							<X>-4.925</X>
+							<Y>2.026</Y>
+							<Z>-1.138</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="81">
+						<Position>
+							<X>-4.137</X>
+							<Y>1.83</Y>
+							<Z>-1.15</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>82</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">34</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="82">
+						<Position>
+							<X>-4.5</X>
+							<Y>2.03</Y>
+							<Z>1.44</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="83">
+						<Position>
+							<X>-4.111</X>
+							<Y>1.845</Y>
+							<Z>1.087</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>84</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">35</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="84">
+						<Position>
+							<X>5.9</X>
+							<Y>2.025</Y>
+							<Z>-0.58</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="85">
+						<Position>
+							<X>5.9</X>
+							<Y>1.829</Y>
+							<Z>-1.369</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>86</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="86">
+						<Position>
+							<X>2.238</X>
+							<Y>1.998</Y>
+							<Z>-0.973</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="87">
+						<Position>
+							<X>2.435</X>
+							<Y>1.83</Y>
+							<Z>-1.609</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>88</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="88">
+						<Position>
+							<X>-1.3</X>
+							<Y>2.039</Y>
+							<Z>-4.012</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="89">
+						<Position>
+							<X>-1.3</X>
+							<Y>1.859</Y>
+							<Z>-4.372</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>90</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="90">
+						<Position>
+							<X>-3.948</X>
+							<Y>2.019</Y>
+							<Z>-5.5</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="91">
+						<Position>
+							<X>-3.571</X>
+							<Y>1.831</Y>
+							<Z>-5.5</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>92</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="92">
+						<Position>
+							<X>2.4</X>
+							<Y>2.03</Y>
+							<Z>-6.97</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="93">
+						<Position>
+							<X>2.4</X>
+							<Y>1.795</Y>
+							<Z>-6.418</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>94</StartNodeIndex>
+				<Length>2</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">2</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="94">
+						<Position>
+							<X>7.412</X>
+							<Y>2.002</Y>
+							<Z>-4</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="95">
+						<Position>
+							<X>6.978</X>
+							<Y>1.795</Y>
+							<Z>-4</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<ViewObject>
+				<Position>
+					<X>-2</X>
+					<Y>3.528</Y>
+					<Z>-1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65280</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>0.75</X>
+					<Y>2.395</Y>
+					<Z>7.9</Z>
+				</Position>
+				<YRotation>-180</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>-2</X>
+					<Y>2.045</Y>
+					<Z>-1</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65287</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<MinimapTileIDObject>
+				<!--1962-->
+				<Tilemap>
+					<!--data/stage/rainbow_cruise/rainbow_cruise_00_isc.bin-->
+					<Location>./rainbow_cruise_00_isc.bin</Location>
+				</Tilemap>
+			</MinimapTileIDObject>
+			<EntranceObject entranceID="0">
+				<Position>
+					<X>-6.55</X>
+					<Y>2.7</Y>
+					<Z>12</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="1">
+				<Position>
+					<X>0.45</X>
+					<Y>2.082</Y>
+					<Z>6.25</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">8</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="2">
+				<Position>
+					<X>0.45</X>
+					<Y>2.082</Y>
+					<Z>6.5</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">8</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="3">
+				<Position>
+					<X>0.7</X>
+					<Y>2.082</Y>
+					<Z>6.6</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">8</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<Type14Object>
+				<Parameters count="4">
+					<Parameter id="0">4</Parameter>
+					<Parameter id="1">1</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">0</Parameter>
+				</Parameters>
+			</Type14Object>
+			<MinimapScaleObject>
+				<Scale>2400</Scale>
+			</MinimapScaleObject>
+			<StandardObject area="0" star="0">
+				<!--RC_BURANKO-->
+				<ObjectID>112</ObjectID>
+				<Position>
+					<X>-0.725</X>
+					<Y>5.429</Y>
+					<Z>-3.6</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_BURANKO-->
+				<ObjectID>112</ObjectID>
+				<Position>
+					<X>-2.12</X>
+					<Y>5.87</Y>
+					<Z>-4.9</Z>
+				</Position>
+				<YRotation>-180</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_GURUGURU-->
+				<ObjectID>115</ObjectID>
+				<Position>
+					<X>-3.098</X>
+					<Y>3</Y>
+					<Z>0.49</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_GURUGURU-->
+				<ObjectID>115</ObjectID>
+				<Position>
+					<X>-6.479</X>
+					<Y>3</Y>
+					<Z>-2.594</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>0.3</X>
+					<Y>4.509</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-0.1</X>
+					<Y>4.622</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-0.3</X>
+					<Y>4.679</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-0.5</X>
+					<Y>4.736</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-0.7</X>
+					<Y>4.793</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-0.9</X>
+					<Y>4.849</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-1.1</X>
+					<Y>4.906</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-1.3</X>
+					<Y>4.963</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-1.5</X>
+					<Y>5.02</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>-1.677</X>
+					<Y>5.077</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--RC_TIKUWA-->
+				<ObjectID>111</ObjectID>
+				<Position>
+					<X>0.1</X>
+					<Y>4.565</Y>
+					<Z>-7.77</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+		</Objects>
+		<TextureAnimationData>
+			<TextureAnimationArea area="0">
+				<NumberOfFrames>45</NumberOfFrames>
+				<NumberOfAnimations>1</NumberOfAnimations>
+				<ScaleTable>
+					<UInt>4096</UInt>
+				</ScaleTable>
+				<RotationTable>
+					<UShort>0</UShort>
+					<UShort>11</UShort>
+					<UShort>22</UShort>
+					<UShort>34</UShort>
+					<UShort>45</UShort>
+					<UShort>56</UShort>
+					<UShort>68</UShort>
+					<UShort>79</UShort>
+					<UShort>91</UShort>
+					<UShort>102</UShort>
+					<UShort>113</UShort>
+					<UShort>125</UShort>
+					<UShort>136</UShort>
+					<UShort>146</UShort>
+					<UShort>159</UShort>
+					<UShort>170</UShort>
+					<UShort>180</UShort>
+					<UShort>193</UShort>
+					<UShort>204</UShort>
+					<UShort>216</UShort>
+					<UShort>225</UShort>
+					<UShort>238</UShort>
+					<UShort>250</UShort>
+					<UShort>259</UShort>
+					<UShort>273</UShort>
+					<UShort>284</UShort>
+					<UShort>293</UShort>
+					<UShort>307</UShort>
+					<UShort>318</UShort>
+					<UShort>329</UShort>
+					<UShort>340</UShort>
+					<UShort>352</UShort>
+					<UShort>364</UShort>
+					<UShort>373</UShort>
+					<UShort>386</UShort>
+					<UShort>398</UShort>
+					<UShort>409</UShort>
+					<UShort>419</UShort>
+					<UShort>432</UShort>
+					<UShort>443</UShort>
+					<UShort>453</UShort>
+					<UShort>466</UShort>
+					<UShort>477</UShort>
+					<UShort>489</UShort>
+					<UShort>499</UShort>
+				</RotationTable>
+				<TranslationTable>
+					<UInt>0</UInt>
+				</TranslationTable>
+				<TextureAnimation>
+					<MaterialName>FerrisWheelArm</MaterialName>
+					<ScaleStartIndex>0</ScaleStartIndex>
+					<ScaleLength>1</ScaleLength>
+					<RotationStartIndex>0</RotationStartIndex>
+					<RotationLength>45</RotationLength>
+					<TranslationStartIndex>0</TranslationStartIndex>
+					<TranslationLength>1</TranslationLength>
+					<DefaultScaleValue>1</DefaultScaleValue>
+				</TextureAnimation>
+			</TextureAnimationArea>
+		</TextureAnimationData>
+	</LevelData>
+</Level>

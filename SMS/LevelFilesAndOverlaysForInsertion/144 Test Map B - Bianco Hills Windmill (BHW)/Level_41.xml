@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor ULTIMATE v2.4.0 Dec 02, 2021-->
+<Level id="41" version="2">
+	<LevelSettings>
+		<ObjectBankSettings>
+			<Bank id="0">0</Bank>
+			<Bank id="1">0</Bank>
+			<Bank id="2">3</Bank>
+			<Bank id="3">1</Bank>
+			<Bank id="4">0</Bank>
+			<Bank id="5">0</Bank>
+			<Bank id="6">0</Bank>
+			<Bank id="7">42</Bank>
+		</ObjectBankSettings>
+		<LevelModel>
+			<!--data/stage/test_map_b/test_map_b_all.bmd-->
+			<Location>./test_map_b_all.bmd</Location>
+		</LevelModel>
+		<CollisionMap>
+			<!--data/stage/test_map_b/test_map_b.kcl-->
+			<Location>./test_map_b.kcl</Location>
+		</CollisionMap>
+		<MinimapSettings>
+			<Tileset>
+				<!--data/stage/test_map_b/test_map_b_icg.bin-->
+				<Location>./test_map_b_icg.bin</Location>
+			</Tileset>
+			<Palette>
+				<!--data/stage/test_map_b/test_map_b_icl.bin-->
+				<Location>./test_map_b_icl.bin</Location>
+			</Palette>
+			<CoordinateScale>1150</CoordinateScale>
+			<MinimapTilemapIndices>
+				<MinimapTilemapIndex area="0">0</MinimapTilemapIndex>
+			</MinimapTilemapIndices>
+		</MinimapSettings>
+		<NumberOfAreas>1</NumberOfAreas>
+		<CameraStartZoomedOut>0</CameraStartZoomedOut>
+		<Background>1</Background>
+		<Music>
+			<Byte>7</Byte>
+			<Byte>34</Byte>
+			<Byte>58</Byte>
+		</Music>
+		<ActSelectorID>0</ActSelectorID>
+	</LevelSettings>
+	<CLPS>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+	</CLPS>
+	<LevelData>
+		<Objects>
+			<ViewObject>
+				<Position>
+					<X>1.1</X>
+					<Y>0.3</Y>
+					<Z>1.1</Z>
+				</Position>
+				<YRotation>-45</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<MinimapTileIDObject>
+				<!--2058-->
+				<Tilemap>
+					<!--data/stage/test_map_b/test_map_b_00_isc.bin-->
+					<Location>./test_map_b_00_isc.bin</Location>
+				</Tilemap>
+			</MinimapTileIDObject>
+			<EntranceObject entranceID="0">
+				<Position>
+					<X>1.5</X>
+					<Y>0.2</Y>
+					<Z>1.5</Z>
+				</Position>
+				<YRotation>-135</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">0</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="1">
+				<Position>
+					<X>-0.166</X>
+					<Y>0</Y>
+					<Z>-2.333</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">0</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="2">
+				<Position>
+					<X>0.166</X>
+					<Y>0</Y>
+					<Z>-2.333</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">0</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="3">
+				<Position>
+					<X>0.5</X>
+					<Y>0</Y>
+					<Z>-2.333</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">0</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<MinimapScaleObject>
+				<Scale>1800</Scale>
+			</MinimapScaleObject>
+			<SimpleObject area="0" star="0">
+				<!--STARBASE-->
+				<ObjectID>63</ObjectID>
+				<Position>
+					<X>0</X>
+					<Y>0.15</Y>
+					<Z>0</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">33</Parameter>
+				</Parameters>
+			</SimpleObject>
+			<StandardObject area="0" star="0">
+				<!--BATANKING-->
+				<ObjectID>65</ObjectID>
+				<Position>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65281</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--FIREPAKUN-->
+				<ObjectID>312</ObjectID>
+				<Position>
+					<X>0.319</X>
+					<Y>0</Y>
+					<Z>1.408</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--FIREPAKUN-->
+				<ObjectID>312</ObjectID>
+				<Position>
+					<X>0.944</X>
+					<Y>0</Y>
+					<Z>0.282</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--FIREPAKUN-->
+				<ObjectID>312</ObjectID>
+				<Position>
+					<X>0.939</X>
+					<Y>0</Y>
+					<Z>-0.94</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--FIREPAKUN-->
+				<ObjectID>312</ObjectID>
+				<Position>
+					<X>-0.772</X>
+					<Y>0</Y>
+					<Z>-1.126</Z>
+				</Position>
+				<YRotation>39.99573</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+			<StandardObject area="0" star="0">
+				<!--FIREPAKUN-->
+				<ObjectID>312</ObjectID>
+				<Position>
+					<X>-0.99</X>
+					<Y>0</Y>
+					<Z>0.254</Z>
+				</Position>
+				<YRotation>29.99817</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+		</Objects>
+		<TextureAnimationData>
+			<TextureAnimationArea area="0">
+				<NumberOfFrames>0</NumberOfFrames>
+				<NumberOfAnimations>0</NumberOfAnimations>
+				<ScaleTable length="0" />
+				<RotationTable length="0" />
+				<TranslationTable length="0" />
+			</TextureAnimationArea>
+		</TextureAnimationData>
+	</LevelData>
+</Level>

@@ -1,0 +1,4 @@
+Also, if you want to replace Bob-Omb Battlefield music with it you'll need to replace both the BGM_CHIJOU and BGM_CLR_CHJO with the .Swar file included
+
+The Bob-Omb Battlefield music uses two .swar files for some reason, so you'll need to replace both 57NCS_WAVE_BGM_CHIJOU.swar and 56NCS_WAVE_BGM_CLR_CHJO.swar. 
+The .sseq file should be right though.

@@ -1,0 +1,3 @@
+Adding Poinks (207 - WF Bomp - Small) causes the game to crash, but not immediately.
+Don't know why, I think they must have been working at some point.
+Here I've just removed them from the level.

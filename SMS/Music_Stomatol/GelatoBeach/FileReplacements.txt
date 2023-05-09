@@ -1,0 +1,7 @@
+Replace SSL - Pyramid music:
+SSEQ:
+61NCS_BGM_DUNGEON.sseq
+SBNK:
+074NCS_BANK_BGM_DUNGEON.sbnk
+SWAR:
+68NCS_WAVE_BGM_DUNGEON.swar

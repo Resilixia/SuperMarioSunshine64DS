@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--SM64DS Editor ULTIMATE v2.4.0 Dec 02, 2021-->
+<Level id="25" version="2">
+	<LevelSettings>
+		<ObjectBankSettings>
+			<Bank id="0">1</Bank>
+			<Bank id="1">2</Bank>
+			<Bank id="2">0</Bank>
+			<Bank id="3">1</Bank>
+			<Bank id="4">0</Bank>
+			<Bank id="5">1</Bank>
+			<Bank id="6">1</Bank>
+			<Bank id="7">26</Bank>
+		</ObjectBankSettings>
+		<LevelModel>
+			<!--data/stage/tibi_deka_t/tibi_deka_t_all.bmd-->
+			<Location>./tibi_deka_t_all.bmd</Location>
+		</LevelModel>
+		<CollisionMap>
+			<!--data/stage/tibi_deka_t/tibi_deka_t.kcl-->
+			<Location>./tibi_deka_t.kcl</Location>
+		</CollisionMap>
+		<MinimapSettings>
+			<Tileset>
+				<!--data/stage/tibi_deka_t/tibi_deka_t_icg.bin-->
+				<Location>./tibi_deka_t_icg.bin</Location>
+			</Tileset>
+			<Palette>
+				<!--data/stage/tibi_deka_t/tibi_deka_t_icl.bin-->
+				<Location>./tibi_deka_t_icl.bin</Location>
+			</Palette>
+			<CoordinateScale>4400</CoordinateScale>
+			<MinimapTilemapIndices>
+				<MinimapTilemapIndex area="0">0</MinimapTilemapIndex>
+			</MinimapTilemapIndices>
+		</MinimapSettings>
+		<NumberOfAreas>1</NumberOfAreas>
+		<CameraStartZoomedOut>0</CameraStartZoomedOut>
+		<Background>1</Background>
+		<Music>
+			<Byte>19</Byte>
+			<Byte>48</Byte>
+			<Byte>58</Byte>
+		</Music>
+		<ActSelectorID>12</ActSelectorID>
+	</LevelSettings>
+	<CLPS>
+		<Entry>
+			<TerrainType>4</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>2</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>8</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>5</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>2</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>12</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>8</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>2</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>4</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>2</Traction>
+			<CameraBehaviour>8</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>true</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>0</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>4</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>4</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>5</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>6</CameraBehaviour>
+			<Behaviour>0</Behaviour>
+			<TransparentToCamera>false</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+		<Entry>
+			<TerrainType>12</TerrainType>
+			<Water>false</Water>
+			<ViewID>63</ViewID>
+			<Traction>0</Traction>
+			<CameraBehaviour>0</CameraBehaviour>
+			<Behaviour>17</Behaviour>
+			<TransparentToCamera>true</TransparentToCamera>
+			<Toxic>false</Toxic>
+			<Unknown26>0</Unknown26>
+			<Padding1>0</Padding1>
+			<WindID>255</WindID>
+			<Padding2>0</Padding2>
+		</Entry>
+	</CLPS>
+	<LevelData>
+		<Objects>
+			<PathObject>
+				<StartNodeIndex>0</StartNodeIndex>
+				<Length>9</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">255</Parameter>
+					<Parameter id="2">127</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="0">
+						<Position>
+							<X>-1.355</X>
+							<Y>0.08</Y>
+							<Z>-0.633</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="1">
+						<Position>
+							<X>-1.415</X>
+							<Y>0.028</Y>
+							<Z>-0.686</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="2">
+						<Position>
+							<X>-1.6</X>
+							<Y>0.052</Y>
+							<Z>-1.4</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="3">
+						<Position>
+							<X>-1.4</X>
+							<Y>0.003</Y>
+							<Z>-1.5</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="4">
+						<Position>
+							<X>-1.063</X>
+							<Y>-0.102</Y>
+							<Z>-1.43</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="5">
+						<Position>
+							<X>-0.494</X>
+							<Y>-0.364</Y>
+							<Z>-1.43</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="6">
+						<Position>
+							<X>0.209</X>
+							<Y>-0.48</Y>
+							<Z>-1.43</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="7">
+						<Position>
+							<X>0.813</X>
+							<Y>-0.6</Y>
+							<Z>-1.43</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="8">
+						<Position>
+							<X>0.947</X>
+							<Y>-0.615</Y>
+							<Z>-1.43</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>9</StartNodeIndex>
+				<Length>4</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">255</Parameter>
+					<Parameter id="2">255</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="9">
+						<Position>
+							<X>0</X>
+							<Y>0.9</Y>
+							<Z>0.9</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="10">
+						<Position>
+							<X>-0.92</X>
+							<Y>0.9</Y>
+							<Z>-0.15</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="11">
+						<Position>
+							<X>0</X>
+							<Y>-0.42</Y>
+							<Z>-4.5</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="12">
+						<Position>
+							<X>1.3</X>
+							<Y>1.2</Y>
+							<Z>-0.5</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<PathObject>
+				<StartNodeIndex>13</StartNodeIndex>
+				<Length>4</Length>
+				<Parameters count="3">
+					<Parameter id="0">255</Parameter>
+					<Parameter id="1">255</Parameter>
+					<Parameter id="2">255</Parameter>
+				</Parameters>
+				<Nodes>
+					<PathPointObject index="13">
+						<Position>
+							<X>-1</X>
+							<Y>0.2</Y>
+							<Z>0.7</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="14">
+						<Position>
+							<X>-1</X>
+							<Y>0.2</Y>
+							<Z>1.5</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="15">
+						<Position>
+							<X>0</X>
+							<Y>0.2</Y>
+							<Z>1.6</Z>
+						</Position>
+					</PathPointObject>
+					<PathPointObject index="16">
+						<Position>
+							<X>0.4</X>
+							<Y>0.2</Y>
+							<Z>0.7</Z>
+						</Position>
+					</PathPointObject>
+				</Nodes>
+			</PathObject>
+			<ViewObject>
+				<Position>
+					<X>0</X>
+					<Y>2</Y>
+					<Z>-5.6</Z>
+				</Position>
+				<YRotation>-49.99878</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65280</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>21</Z>
+				</Position>
+				<YRotation>-49.99878</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>0</X>
+					<Y>2</Y>
+					<Z>-0.05</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65287</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>-2.2</X>
+					<Y>2</Y>
+					<Z>-1.8</Z>
+				</Position>
+				<YRotation>59.99634</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>2.5</X>
+					<Y>2</Y>
+					<Z>-1.8</Z>
+				</Position>
+				<YRotation>-64.99512</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>-1.5</X>
+					<Y>2</Y>
+					<Z>-1.4</Z>
+				</Position>
+				<YRotation>49.99878</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<ViewObject>
+				<Position>
+					<X>-1</X>
+					<Y>2</Y>
+					<Z>-2.5</Z>
+				</Position>
+				<YRotation>-29.99817</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65282</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</ViewObject>
+			<MinimapTileIDObject>
+				<!--2025-->
+				<Tilemap>
+					<!--data/stage/tibi_deka_t/tibi_deka_t_00_isc.bin-->
+					<Location>./tibi_deka_t_00_isc.bin</Location>
+				</Tilemap>
+			</MinimapTileIDObject>
+			<EntranceObject entranceID="0">
+				<Position>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>20</Z>
+				</Position>
+				<YRotation>129.9957</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="1">
+				<Position>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>20</Z>
+				</Position>
+				<YRotation>129.9957</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="2">
+				<Position>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>20</Z>
+				</Position>
+				<YRotation>129.9957</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="3">
+				<Position>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>20</Z>
+				</Position>
+				<YRotation>129.9957</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1288</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<EntranceObject entranceID="4">
+				<Position>
+					<X>8.2</X>
+					<Y>0.1</Y>
+					<Z>0.7</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="4">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+					<Parameter id="3">1688</Parameter>
+				</Parameters>
+			</EntranceObject>
+			<TpSrcObject>
+				<Position>
+					<X>0.3</X>
+					<Y>-0.75</Y>
+					<Z>-4.1</Z>
+				</Position>
+				<Parameters count="2">
+					<Parameter id="0">0</Parameter>
+					<Parameter id="1">0</Parameter>
+				</Parameters>
+			</TpSrcObject>
+			<TpDstObject>
+				<Position>
+					<X>-1.6</X>
+					<Y>-0.6</Y>
+					<Z>-2</Z>
+				</Position>
+				<Parameters count="1">
+					<Parameter id="0">0</Parameter>
+				</Parameters>
+			</TpDstObject>
+			<MinimapScaleObject>
+				<Scale>2000</Scale>
+			</MinimapScaleObject>
+			<Type14Object>
+				<Parameters count="4">
+					<Parameter id="0">52</Parameter>
+					<Parameter id="1">51</Parameter>
+					<Parameter id="2">3</Parameter>
+					<Parameter id="3">3</Parameter>
+				</Parameters>
+			</Type14Object>
+			<ExitObject star="0">
+				<Position>
+					<X>8.2</X>
+					<Y>0</Y>
+					<Z>0.7</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<DestinationLevel>24</DestinationLevel>
+				<EntranceID>4</EntranceID>
+				<Parameters>
+					<Parameter count="2" id="0">49152</Parameter>
+					<Parameter id="1">255</Parameter>
+				</Parameters>
+			</ExitObject>
+			<StandardObject area="0" star="0">
+				<!--DOKAN-->
+				<ObjectID>186</ObjectID>
+				<Position>
+					<X>8.2</X>
+					<Y>0</Y>
+					<Z>0.7</Z>
+				</Position>
+				<YRotation>0</YRotation>
+				<Parameters count="3">
+					<Parameter id="0">65535</Parameter>
+					<Parameter id="1">0</Parameter>
+					<Parameter id="2">0</Parameter>
+				</Parameters>
+			</StandardObject>
+		</Objects>
+		<TextureAnimationData>
+			<TextureAnimationArea area="0">
+				<NumberOfFrames>0</NumberOfFrames>
+				<NumberOfAnimations>0</NumberOfAnimations>
+				<ScaleTable length="0" />
+				<RotationTable length="0" />
+				<TranslationTable length="0" />
+			</TextureAnimationArea>
+		</TextureAnimationData>
+	</LevelData>
+</Level>

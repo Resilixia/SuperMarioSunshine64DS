@@ -1,6 +1,12 @@
-Delfino Plaza:
 1.00
 1
 65
+0
+FALSE
+
+v2:
+1.00
+1
+100
 0
 FALSE

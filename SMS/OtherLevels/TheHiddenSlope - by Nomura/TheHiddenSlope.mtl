@@ -1,0 +1,261 @@
+newmtl Cage
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd cage_png.png
+
+newmtl Maze
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar grass_png.png
+
+newmtl Path
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+
+
+newmtl Path_kabe.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd kabe_png.png
+
+newmtl Path_pad_grass.png.001
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pad grass_png.png
+
+newmtl Path_pad_wall.png.001
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pad wall_png.png
+
+newmtl Path_platform_g.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd platform g_png.png
+
+newmtl Path_platform_w.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar wall_png.png
+
+newmtl Path_platform_w.png.001
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd platform w_png.png
+
+newmtl Path_wood.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd wood_png.png
+
+newmtl Pillar
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+
+
+newmtl Pillar_kabe.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd kabe_png.png
+
+newmtl Pillar_pillar_grass.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar grass_png.png
+
+newmtl Pillar_pillar_wall.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar wall_png.png
+
+newmtl Pillar_platform_g.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd platform g_png.png
+
+newmtl Pillar_platform_w.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar wall_png.png
+
+newmtl Wall
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+
+
+newmtl Wall_cage.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd cage_png.png
+
+newmtl Wall_grass.png.001
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd grass_png.png
+
+newmtl Wall_kabe.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd kabe_png.png
+
+newmtl Wall_kusa.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd kusa_png.png
+
+newmtl Wall_pad_grass.png.001
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pad grass_png.png
+
+newmtl Wall_pad_wall.png.001
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pad wall_png.png
+
+newmtl Wall_pillar_grass.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar grass_png.png
+
+newmtl Wall_pillar_wall.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar wall_png.png
+
+newmtl Wall_platform_g.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd platform g_png.png
+
+newmtl Wall_platform_w.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd pillar wall_png.png
+
+newmtl Wall_tunnel.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd tisou_png.png
+
+newmtl Wall_wood.png
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 0
+d 1
+illum 2
+map_Kd wood_png.png
+
