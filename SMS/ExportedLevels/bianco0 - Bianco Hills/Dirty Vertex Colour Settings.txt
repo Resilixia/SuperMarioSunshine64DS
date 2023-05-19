@@ -1,0 +1,15 @@
+Bianco Hills:
+? very close:
+0.20
+1
+180
+0
+TRUE
+
+Grass:
+00C401
+1
+1
+70
+0
+FALSE

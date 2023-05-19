@@ -346,12 +346,12 @@
 				</Parameters>
 			</EntranceObject>
 			<FogObject>
-				<Density>0</Density>
-				<Red>255</Red>
-				<Green>160</Green>
-				<Blue>0</Blue>
+				<Density>1</Density>
+				<Red>15</Red>
+				<Green>20</Green>
+				<Blue>80</Blue>
 				<StartDistance>5000</StartDistance>
-				<EndDistance>54464</EndDistance>
+				<EndDistance>40000</EndDistance>
 			</FogObject>
 			<DoorObject star="0">
 				<Position>
@@ -537,9 +537,9 @@
 			</DoorObject>
 			<DoorObject star="0">
 				<Position>
-					<X>-3.618</X>
+					<X>-3.6</X>
 					<Y>0</Y>
-					<Z>-1.68</Z>
+					<Z>-1.67</Z>
 				</Position>
 				<YRotation>-90</YRotation>
 				<DoorType>1</DoorType>
@@ -550,9 +550,9 @@
 			</DoorObject>
 			<DoorObject star="0">
 				<Position>
-					<X>-3.618</X>
+					<X>-3.6</X>
 					<Y>0</Y>
-					<Z>-1.38</Z>
+					<Z>-1.37</Z>
 				</Position>
 				<YRotation>90</YRotation>
 				<DoorType>1</DoorType>

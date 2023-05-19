@@ -29,7 +29,7 @@
 				<!--data/stage/kaizoku_irie/kaizoku_irie_icl.bin-->
 				<Location>./kaizoku_irie_icl.bin</Location>
 			</Palette>
-			<CoordinateScale>3700</CoordinateScale>
+			<CoordinateScale>3800</CoordinateScale>
 			<MinimapTilemapIndices>
 				<MinimapTilemapIndex area="0">0</MinimapTilemapIndex>
 			</MinimapTilemapIndices>
@@ -401,6 +401,20 @@
 				<Parameters>
 					<Parameter count="2" id="0">0</Parameter>
 					<Parameter id="1">0</Parameter>
+				</Parameters>
+			</ExitObject>
+			<ExitObject star="0">
+				<Position>
+					<X>-6.267</X>
+					<Y>1.5</Y>
+					<Z>-11.346</Z>
+				</Position>
+				<YRotation>90</YRotation>
+				<DestinationLevel>9</DestinationLevel>
+				<EntranceID>0</EntranceID>
+				<Parameters>
+					<Parameter count="2" id="0">0</Parameter>
+					<Parameter id="1">34816</Parameter>
 				</Parameters>
 			</ExitObject>
 			<SimpleObject area="0" star="0">

@@ -29,7 +29,7 @@
 				<!--data/stage/bombhei_map/bombhei_map_icl.bin-->
 				<Location>./bombhei_map_icl.bin</Location>
 			</Palette>
-			<CoordinateScale>4800</CoordinateScale>
+			<CoordinateScale>5300</CoordinateScale>
 			<MinimapTilemapIndices>
 				<MinimapTilemapIndex area="0">0</MinimapTilemapIndex>
 			</MinimapTilemapIndices>
@@ -481,10 +481,10 @@
 				</Parameters>
 			</TpDstObject>
 			<FogObject>
-				<Density>0</Density>
-				<Red>160</Red>
-				<Green>160</Green>
-				<Blue>160</Blue>
+				<Density>1</Density>
+				<Red>200</Red>
+				<Green>250</Green>
+				<Blue>250</Blue>
 				<StartDistance>30000</StartDistance>
 				<EndDistance>50000</EndDistance>
 			</FogObject>
