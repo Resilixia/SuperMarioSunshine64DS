@@ -23,11 +23,6 @@ This is an incomplete port of many Super Mario Sunshine elements into Super Mari
 
 ## Known Issues
 The following levels crash upon loading. I think most, if not all, are due to too many polygons and/or textures.
-- Sirena Beach
-- Hotel Delfino
-- Casino Upper
-- Noki Bay
-- Noki Bay Underwater City
 - Gelato Beach: version without vertex colours (used) works but not the version with vertex colours (.blend and settings included)
 - Pinna Park: should really be split in two like the original
 - Hillside Cave v2 (by "Nomura")
@@ -35,10 +30,8 @@ The following levels crash upon loading. I think most, if not all, are due to to
 There is a bug where you can't refill F.L.U.D.D. once the water level reaches zero.
 
 ## SM64DSe Issues
-- I had to use an older version of SM64DSe to import the Petey Piranha IMD model (bosspaku_model_Base_Use_RaisedAndBack.imd): SM64DSe_20170530_R100
 - The imported Petey Piranha BMD does not load correctly in the model editor (load internal model)
 - Can't import a 256x256 minimap over an existing 256x256 minimap using the minimap editor
-- When copying CLPS from a different level the changes aren't saved
 
 ## Other notes
 - The ASM patch "Shared_MinimapSizeSetter.cpp" will make all levels' minimaps 256x256 with the exception of the 4 levels used in multi-player and Test Map B (any others?). This means that the minimaps won't display properly in-game until it's patched.
